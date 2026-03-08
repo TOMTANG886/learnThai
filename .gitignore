@@ -37,6 +37,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# Firebase
+.firebase/
+
 # OS files
 .DS_Store
 Thumbs.db

@@ -7,6 +7,7 @@
     "build:sheets:with-audio": "tsx scripts/build-from-sheets.ts --generate-audio",
     "build": "npm run build:sheets && next build",
     "build:with-audio": "npm run build:sheets:with-audio && next build",
+    "deploy": "npm run build && firebase deploy --only hosting",
     "dev": "next dev",
     "start": "next start",
     "preview": "npm run build && next start",

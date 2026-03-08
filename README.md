@@ -2,6 +2,8 @@
 
 Monorepo for Thai learning content generation and web publishing.
 
+**Live Demo**: [learnthai-db44a.web.app](https://learnthai-db44a.web.app)
+
 ## Repository Structure
 
 - `web/` — Next.js web app (static pages, tests, sheet build pipeline)
