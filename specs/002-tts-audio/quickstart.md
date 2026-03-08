@@ -285,6 +285,131 @@ Open browser: `http://localhost:3000/worksheets/animals`
 4. Verify placeholder files created (small text files with .mp3 extension)
 5. Build site and verify player renders (won't play real audio, but UI works)
 
+### Test Scenario 5: Production HTTP Provider Setup
+
+**Goal**: Configure and test real TTS API integration
+
+**Step 1**: Obtain TTS API credentials
+
+For Google Cloud Text-to-Speech:
+```bash
+# Install gcloud CLI and authenticate
+gcloud auth application-default login
+
+# Enable TTS API
+gcloud services enable texttospeech.googleapis.com
+
+# Get your API key from Console
+# https://console.cloud.google.com/apis/credentials
+```
+
+**Step 2**: Configure environment variables
+
+```bash
+cd web
+cat >> .env.local << EOF
+TTS_PROVIDER=http
+TTS_API_URL=https://texttospeech.googleapis.com/v1/text:synthesize
+TTS_API_KEY=your-actual-api-key-here
+DEFAULT_TTS_VOICE=th-TH-Standard-A
+EOF
+```
+
+**Step 3**: Test with single post
+
+```bash
+# Generate audio for all posts
+npm run build:sheets -- --generate-audio
+```
+
+**Expected Output**:
+```
+[tts-service] Provider: http
+[tts-service] Generating audio for "animals" → calling https://texttospeech...
+[tts-service] ✓ Audio generated: /assets/audio/a3f2b1c9...mp3
+[tts-service] Generating audio for "colors" → calling https://texttospeech...
+[tts-service] ✓ Audio generated: /assets/audio/b4e3d2c1...mp3
+```
+
+**Step 4**: Verify real audio quality
+
+```bash
+# Play generated audio file
+mpg123 web/public/assets/audio/*.mp3
+# Or open in browser after running dev server
+```
+
+**Validation**:
+- ✅ Real Thai speech synthesized (not mock)
+- ✅ Audio duration matches text length
+- ✅ Voice matches DEFAULT_TTS_VOICE setting
+
+### Test Scenario 6: Fallback to Local Provider
+
+**Goal**: Verify automatic fallback when HTTP mode is not configured
+
+**Step 1**: Remove HTTP configuration
+
+```bash
+cd web
+# Comment out HTTP provider settings
+sed -i 's/^TTS_PROVIDER=http/#TTS_PROVIDER=http/' .env.local
+sed -i 's/^TTS_API_URL=/#TTS_API_URL=/' .env.local
+sed -i 's/^TTS_API_KEY=/#TTS_API_KEY=/' .env.local
+```
+
+**Step 2**: Run build without HTTP provider
+
+```bash
+npm run build:sheets -- --generate-audio
+```
+
+**Expected Output**:
+```
+[tts-service] Provider: mock (HTTP mode not enabled)
+[tts-service] Generating local audio for "animals" → /assets/audio/a3f2b1c9...mp3
+[tts-service] Generating local audio for "colors" → /assets/audio/b4e3d2c1...mp3
+✓ Build complete: 17 posts processed using Local Provider mode
+```
+
+**Validation**:
+- ✅ Build completes successfully without HTTP credentials
+- ✅ Local mock files created instead of calling HTTP API
+- ✅ No errors about missing TTS_API_URL or TTS_API_KEY
+
+**Step 3**: Verify explicit mock provider works
+
+```bash
+# Explicitly set mock provider
+echo "TTS_PROVIDER=mock" >> .env.local
+npm run build:sheets -- --generate-audio
+```
+
+**Expected**: Same behavior as Step 2 (local generation)
+
+**Step 4**: Test invalid HTTP configuration (fail-fast)
+
+```bash
+# Set HTTP provider but omit required credentials
+cat > .env.local << EOF
+TTS_PROVIDER=http
+# Missing TTS_API_URL and TTS_API_KEY
+EOF
+
+npm run build:sheets -- --generate-audio
+```
+
+**Expected Output** (build should fail):
+```
+ERROR: TTS_PROVIDER is set to 'http' but TTS_API_URL is not configured.
+Please set TTS_API_URL in your environment or use TTS_PROVIDER=mock for local development.
+```
+
+**Validation**:
+- ✅ Build fails immediately with clear error message
+- ✅ Error message includes actionable fix (set env var or use mock)
+- ✅ No credentials or sensitive data in error output
+
 ---
 
 ## Troubleshooting

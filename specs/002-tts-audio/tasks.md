@@ -81,8 +81,8 @@
 
 - [X] T026 [US2] Verify local provider implementations (`mock` and `local-gtts`) in `web/src/lib/tts-service.ts`
 - [X] T027 [US2] Run unit tests with `npm test -- tts-service.test.ts`, verify all pass
-- [ ] T028 [US2] Test end-to-end: set `TTS_PROVIDER=mock`, run build with `--generate-audio`, verify success
-- [ ] T029 [US2] Test end-to-end: set `TTS_PROVIDER=local-gtts`, run build with `--generate-audio`, verify success
+- [X] T028 [US2] Test end-to-end: set `TTS_PROVIDER=mock`, run build with `--generate-audio`, verify success
+- [X] T029 [US2] Test end-to-end: set `TTS_PROVIDER=local-gtts`, run build with `--generate-audio`, verify success
 
 **Checkpoint**: Local providers enable development without production credentials - User Story 2 fully functional
 
@@ -118,8 +118,8 @@
 - [X] T046 [US3] Validate non-HTTP modes never call HTTP request path in `web/src/lib/tts-service.ts`
 - [X] T047 [US3] Add explicit actionable config error messaging in `web/src/lib/tts-service.ts`
 - [X] T048 [US3] Add contract assertion for fallback-to-local when HTTP is not enabled in `web/test/contract/tts-contract.test.ts`
-- [ ] T049 [US3] Add production provider setup example in `specs/002-tts-audio/quickstart.md`
-- [ ] T050 [US3] Add fallback behavior example (`non-HTTP => local`) in `specs/002-tts-audio/quickstart.md`
+- [X] T049 [US3] Add production provider setup example in `specs/002-tts-audio/quickstart.md`
+- [X] T050 [US3] Add fallback behavior example (`non-HTTP => local`) in `specs/002-tts-audio/quickstart.md`
 
 **Checkpoint**: HTTP provider + Local fallback behavior are fully functional for User Story 3
 
@@ -146,9 +146,9 @@
 - [X] T061 [US4] Import AudioPlayer component in `web/pages/worksheets/[worksheet].tsx`
 - [X] T062 [US4] Update getStaticProps to include `audio: post.audio || null` in returned props
 - [X] T063 [US4] Add conditional rendering `{audio && <AudioPlayer audioPath={audio} title={title} />}` in page component
-- [ ] T064 [US4] Test: build site with `npm run build`, visit /worksheets/animals, verify player renders
-- [ ] T065 [US4] Test: click play button, verify audio loads and plays with progress updates
-- [ ] T066 [US4] Test: delete audio file, reload page, verify error message displays
+- [X] T064 [US4] Test: build site with `npm run build`, visit /worksheets/animals, verify player renders
+- [X] T065 [US4] Test: click play button, verify audio loads and plays with progress updates
+- [X] T066 [US4] Test: delete audio file, reload page, verify error message displays
 
 ### Tests for User Story 4 (Optional)
 
@@ -167,17 +167,17 @@
 
 **Purpose**: Documentation, validation, and final integration
 
-- [ ] T073 [P] Update `specs/1-nextjs-static-sheets/quickstart.md` with audio generation instructions
-- [ ] T074 [P] Add "Audio Generation" section to `web/README.md` documenting env vars and usage
-- [ ] T075 [P] Document TTS_PROVIDER options (mock vs http) in README
-- [ ] T076 [P] Add example .env configuration for both providers in README
+- [X] T073 [P] Update `specs/1-nextjs-static-sheets/quickstart.md` with audio generation instructions
+- [X] T074 [P] Add "Audio Generation" section to `web/README.md` documenting env vars and usage
+- [X] T075 [P] Document TTS_PROVIDER options (mock vs http) in README
+- [X] T076 [P] Add example .env configuration for both providers in README
 - [X] T077 [P] Create optional `web/styles/audio-player.css` with example player styling
-- [ ] T078 [P] Add audio player styling section to quickstart.md
+- [X] T078 [P] Add audio player styling section to quickstart.md
 - [X] T079 Run full build end-to-end with mock provider, verify no errors
 - [X] T080 Run full test suite (`npm test`), verify all tests pass
-- [ ] T081 Validate success criteria from spec.md against implementation (SC-001 through SC-011)
+- [X] T081 Validate success criteria from spec.md against implementation (SC-001 through SC-011)
 - [X] T082 Code review: check no credentials logged, error messages are actionable
-- [ ] T083 Final checkpoint: run quickstart.md steps and validate all scenarios work
+- [X] T083 Final checkpoint: run quickstart.md steps and validate all scenarios work
 
 ---
 

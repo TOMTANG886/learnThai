@@ -136,6 +136,40 @@ Go to **Settings → Secrets and variables → Actions** in your repository and 
 
 ---
 
+## Audio Generation (Feature 002-tts-audio)
+
+To generate Thai text-to-speech audio files during the build process, add the `--generate-audio` flag:
+
+```bash
+npm run build:sheets -- --generate-audio
+```
+
+This will:
+1. Generate audio files from the `body_markdown` text of each post
+2. Store files in `web/public/assets/audio/` with hash-based filenames
+3. Add audio paths to the manifest for playback on blog pages
+
+**Configuration**: See [web/README.md](../../web/README.md#audio-generation) for full documentation on:
+- TTS provider options (mock vs HTTP)
+- Environment variable configuration
+- Caching behavior and performance optimization
+
+**Quick Setup**:
+
+```bash
+# Local development (no credentials needed)
+echo "TTS_PROVIDER=mock" >> web/.env.local
+
+# Production (requires TTS API)
+echo "TTS_PROVIDER=http" >> web/.env.local
+echo "TTS_API_URL=https://your-tts-api.com/synthesize" >> web/.env.local
+echo "TTS_API_KEY=your-api-key" >> web/.env.local
+```
+
+For detailed instructions, see [specs/002-tts-audio/quickstart.md](../002-tts-audio/quickstart.md).
+
+---
+
 ## Downloading Audio Assets
 
 To download audio files referenced in `audio_url` into `public/assets/audio/` during the build:
