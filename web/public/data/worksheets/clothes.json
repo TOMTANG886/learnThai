@@ -1,0 +1,194 @@
+{
+  "worksheetName": "clothes",
+  "worksheetSlug": "clothes",
+  "columns": [
+    "En",
+    "Thai",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "hat",
+      "Thai": "หมวก",
+      "title": "",
+      "slug": "hat",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "hat"
+    },
+    {
+      "En": "glasses",
+      "Thai": "แว่นตา",
+      "title": "",
+      "slug": "glasses",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "glasses"
+    },
+    {
+      "En": "scarf",
+      "Thai": "ผ้าพันคอ",
+      "title": "",
+      "slug": "scarf",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "scarf"
+    },
+    {
+      "En": "Gloves",
+      "Thai": "ถุงมือ",
+      "title": "",
+      "slug": "gloves",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "gloves"
+    },
+    {
+      "En": "Face mask",
+      "Thai": "หน้ากาก",
+      "title": "",
+      "slug": "face-mask",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "face-mask"
+    },
+    {
+      "En": "mask",
+      "Thai": "หน้ากาก",
+      "title": "",
+      "slug": "mask",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "mask"
+    },
+    {
+      "En": "pants",
+      "Thai": "กางเกง",
+      "title": "",
+      "slug": "pants",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "pants"
+    },
+    {
+      "En": "shorts",
+      "Thai": "กางเกงขาสั้น",
+      "title": "",
+      "slug": "shorts",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "shorts"
+    },
+    {
+      "En": "underwear",
+      "Thai": "กางเกงใน",
+      "title": "",
+      "slug": "underwear",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "underwear"
+    },
+    {
+      "En": "bra",
+      "Thai": "",
+      "title": "",
+      "slug": "bra",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bra"
+    },
+    {
+      "En": "pyjamas",
+      "Thai": "ชุดนอน",
+      "title": "",
+      "slug": "pyjamas",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "pyjamas"
+    },
+    {
+      "En": "bikini",
+      "Thai": "บิกินี่",
+      "title": "",
+      "slug": "bikini",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bikini"
+    },
+    {
+      "En": "swimsuit",
+      "Thai": "ชุดว่ายน้ำ",
+      "title": "",
+      "slug": "swimsuit",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "swimsuit"
+    },
+    {
+      "En": "shirt",
+      "Thai": "เสื้อ",
+      "title": "",
+      "slug": "shirt",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "shirt"
+    },
+    {
+      "En": "t-shirt",
+      "Thai": "เสื้อยืด",
+      "title": "",
+      "slug": "t-shirt",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "t-shirt"
+    },
+    {
+      "En": "long sleeve shirt",
+      "Thai": "เสื้อแขนยาว",
+      "title": "",
+      "slug": "long-sleeve-shirt",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "long-sleeve-shirt"
+    },
+    {
+      "En": "socks",
+      "Thai": "ถุงเท้า",
+      "title": "",
+      "slug": "socks",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "socks"
+    },
+    {
+      "En": "shoes",
+      "Thai": "รองเท้า",
+      "title": "",
+      "slug": "shoes",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "shoes"
+    },
+    {
+      "En": "sandals",
+      "Thai": "รองเท้าแตะ",
+      "title": "",
+      "slug": "sandals",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "sandals"
+    },
+    {
+      "En": "thai dress",
+      "Thai": "ชุดไทย",
+      "title": "",
+      "slug": "thai-dress",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "thai-dress"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "worksheetName": "date",
+  "worksheetSlug": "date",
+  "columns": [
+    "English",
+    "Thai",
+    "Pronunciation",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "English": "What date?",
+      "Thai": "วันที่เท่าไหร่?",
+      "Pronunciation": "wan thii  thao  rai?",
+      "title": "",
+      "slug": "what-date",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "what-date"
+    },
+    {
+      "English": "What date is today?",
+      "Thai": "วันนี้เป็นวันที่เท่าไหร่?",
+      "Pronunciation": "wan nii pen wan thii thao rai?",
+      "title": "",
+      "slug": "what-date-is-today",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "what-date-is-today"
+    },
+    {
+      "English": "2025/11/11",
+      "Thai": "วันที่ 11 พฤศจิกายน 2568",
+      "Pronunciation": "wan thii _ xxx 256",
+      "title": "",
+      "slug": "20251111",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "20251111"
+    },
+    {
+      "English": "year",
+      "Thai": "ปี",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "year",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "year"
+    },
+    {
+      "English": "month",
+      "Thai": "เดือน",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "month",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "month"
+    },
+    {
+      "English": "day",
+      "Thai": "วัน",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "day",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "day"
+    },
+    {
+      "English": "week",
+      "Thai": "สัปดาห์",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "week",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "week"
+    }
+  ]
+}

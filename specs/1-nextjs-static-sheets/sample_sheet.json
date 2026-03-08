@@ -1,0 +1,38 @@
+[
+  {
+    "worksheetName": "Phrases",
+    "headers": ["title", "slug", "body_markdown", "publish_flag", "date", "author", "tags", "audio_url"],
+    "rows": [
+      {
+        "title": "Hello",
+        "slug": "hello",
+        "body_markdown": "## Hello\n\nThe Thai word for hello is **สวัสดี** (sawasdee).",
+        "publish_flag": "true",
+        "date": "2024-01-01",
+        "author": "Pan",
+        "tags": "greeting,basic",
+        "audio_url": "https://example.com/audio/hello.mp3"
+      },
+      {
+        "title": "Thank You",
+        "slug": "thank-you",
+        "body_markdown": "## Thank You\n\nThe Thai word for thank you is **ขอบคุณ** (khop khun).",
+        "publish_flag": "true",
+        "date": "2024-01-02",
+        "author": "Pan",
+        "tags": "polite,basic",
+        "audio_url": ""
+      },
+      {
+        "title": "Draft Post",
+        "slug": "draft-post",
+        "body_markdown": "This is a draft.",
+        "publish_flag": "false",
+        "date": "2024-01-03",
+        "author": "Pan",
+        "tags": "",
+        "audio_url": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "worksheetName": "nationalities",
+  "worksheetSlug": "nationalities",
+  "columns": [
+    "En",
+    "Thai",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "Chinese",
+      "Thai": "",
+      "title": "",
+      "slug": "chinese",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "chinese"
+    },
+    {
+      "En": "Malaysia",
+      "Thai": "",
+      "title": "",
+      "slug": "malaysia",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "malaysia"
+    },
+    {
+      "En": "Singapore",
+      "Thai": "",
+      "title": "",
+      "slug": "singapore",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "singapore"
+    },
+    {
+      "En": "Japanese",
+      "Thai": "",
+      "title": "",
+      "slug": "japanese",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "japanese"
+    },
+    {
+      "En": "Korea",
+      "Thai": "",
+      "title": "",
+      "slug": "korea",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "korea"
+    },
+    {
+      "En": "English",
+      "Thai": "",
+      "title": "",
+      "slug": "english",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "english"
+    }
+  ]
+}

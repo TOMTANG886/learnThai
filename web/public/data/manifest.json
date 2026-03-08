@@ -1,0 +1,154 @@
+{
+  "run_id": "610a90e3-bd7b-414e-a1f5-c05a979aff9e",
+  "timestamp": "2026-03-08T02:13:22.671Z",
+  "source": "sheets:1WPFglLUgFfAgQuDgk4uGNJ4JrCiyAEeHqVSLWr11FCI",
+  "worksheets": [
+    {
+      "worksheetName": "tones",
+      "worksheetSlug": "tones",
+      "rowCount": 5
+    },
+    {
+      "worksheetName": "simpleConversation",
+      "worksheetSlug": "simpleconversation",
+      "rowCount": 19
+    },
+    {
+      "worksheetName": "numbers",
+      "worksheetSlug": "numbers",
+      "rowCount": 29
+    },
+    {
+      "worksheetName": "nationalities",
+      "worksheetSlug": "nationalities",
+      "rowCount": 6
+    },
+    {
+      "worksheetName": "place",
+      "worksheetSlug": "place",
+      "rowCount": 20
+    },
+    {
+      "worksheetName": "map&directions",
+      "worksheetSlug": "mapdirections",
+      "rowCount": 0
+    },
+    {
+      "worksheetName": "transportation",
+      "worksheetSlug": "transportation",
+      "rowCount": 15
+    },
+    {
+      "worksheetName": "ticket",
+      "worksheetSlug": "ticket",
+      "rowCount": 0
+    },
+    {
+      "worksheetName": "times",
+      "worksheetSlug": "times",
+      "rowCount": 7
+    },
+    {
+      "worksheetName": "day",
+      "worksheetSlug": "day",
+      "rowCount": 23
+    },
+    {
+      "worksheetName": "date",
+      "worksheetSlug": "date",
+      "rowCount": 7
+    },
+    {
+      "worksheetName": "months",
+      "worksheetSlug": "months",
+      "rowCount": 14
+    },
+    {
+      "worksheetName": "year",
+      "worksheetSlug": "year",
+      "rowCount": 2
+    },
+    {
+      "worksheetName": "clothes",
+      "worksheetSlug": "clothes",
+      "rowCount": 20
+    },
+    {
+      "worksheetName": "colors",
+      "worksheetSlug": "colors",
+      "rowCount": 10
+    },
+    {
+      "worksheetName": "animals",
+      "worksheetSlug": "animals",
+      "rowCount": 36
+    }
+  ],
+  "generated_files": [
+    {
+      "path": "public/data/worksheets/tones.json",
+      "hash": "c5389049c211ed4c"
+    },
+    {
+      "path": "public/data/worksheets/simpleconversation.json",
+      "hash": "363709cd965798be"
+    },
+    {
+      "path": "public/data/worksheets/numbers.json",
+      "hash": "90e2671aa4b795bf"
+    },
+    {
+      "path": "public/data/worksheets/nationalities.json",
+      "hash": "94fd6607dd1e373f"
+    },
+    {
+      "path": "public/data/worksheets/place.json",
+      "hash": "ba4ad67b0efe2d53"
+    },
+    {
+      "path": "public/data/worksheets/mapdirections.json",
+      "hash": "8b6cede8c93e8f97"
+    },
+    {
+      "path": "public/data/worksheets/transportation.json",
+      "hash": "2691d7eaecdde124"
+    },
+    {
+      "path": "public/data/worksheets/ticket.json",
+      "hash": "73e2fd2a2db51db1"
+    },
+    {
+      "path": "public/data/worksheets/times.json",
+      "hash": "b40cac6b9f8eee2b"
+    },
+    {
+      "path": "public/data/worksheets/day.json",
+      "hash": "92d02c8f501ec79f"
+    },
+    {
+      "path": "public/data/worksheets/date.json",
+      "hash": "f6af12680cdca813"
+    },
+    {
+      "path": "public/data/worksheets/months.json",
+      "hash": "b12b8fb722c526f0"
+    },
+    {
+      "path": "public/data/worksheets/year.json",
+      "hash": "5b79659bcd346b21"
+    },
+    {
+      "path": "public/data/worksheets/clothes.json",
+      "hash": "13d04516a9f49223"
+    },
+    {
+      "path": "public/data/worksheets/colors.json",
+      "hash": "e5ae1ace0ca1aecc"
+    },
+    {
+      "path": "public/data/worksheets/animals.json",
+      "hash": "e318f338c7fbebc0"
+    }
+  ],
+  "errors": []
+}

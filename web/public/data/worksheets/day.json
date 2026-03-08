@@ -1,0 +1,245 @@
+{
+  "worksheetName": "day",
+  "worksheetSlug": "day",
+  "columns": [
+    "English",
+    "Thai",
+    "Pronunciation",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "English": "What day?",
+      "Thai": "วันอะไร?",
+      "Pronunciation": "wan a rai?",
+      "title": "",
+      "slug": "what-day",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "what-day"
+    },
+    {
+      "English": "What day is today? = today is what day?",
+      "Thai": "วันนี้เป็นวันอะไร?",
+      "Pronunciation": "wan nii pen wan a rai?",
+      "title": "",
+      "slug": "what-day-is-today-today-is-what-day",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "what-day-is-today-today-is-what-day"
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "monday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "monday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "monday"
+    },
+    {
+      "English": "thuesday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "thuesday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "thuesday"
+    },
+    {
+      "English": "wednesday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "wednesday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "wednesday"
+    },
+    {
+      "English": "thursday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "thursday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "thursday"
+    },
+    {
+      "English": "friday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "friday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "friday"
+    },
+    {
+      "English": "saturday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "saturday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "saturday"
+    },
+    {
+      "English": "sunday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "sunday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "sunday"
+    },
+    {
+      "English": "holiday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "holiday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "holiday"
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "tow days ago",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "tow-days-ago",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "tow-days-ago"
+    },
+    {
+      "English": "yesterday",
+      "Thai": "เมื่อวาน",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "yesterday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "yesterday"
+    },
+    {
+      "English": "today",
+      "Thai": "วันนี้",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "today",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "today"
+    },
+    {
+      "English": "tomorrow",
+      "Thai": "พรุ่งนี้",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "tomorrow",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "tomorrow"
+    },
+    {
+      "English": "the day after tomorrow",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "the-day-after-tomorrow",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "the-day-after-tomorrow"
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": ""
+    },
+    {
+      "English": "birthday",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "birthday",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "birthday"
+    }
+  ]
+}

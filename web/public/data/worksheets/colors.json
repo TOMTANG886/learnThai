@@ -1,0 +1,104 @@
+{
+  "worksheetName": "colors",
+  "worksheetSlug": "colors",
+  "columns": [
+    "En",
+    "Thai",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "black",
+      "Thai": "",
+      "title": "",
+      "slug": "black",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "black"
+    },
+    {
+      "En": "white",
+      "Thai": "",
+      "title": "",
+      "slug": "white",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "white"
+    },
+    {
+      "En": "red",
+      "Thai": "",
+      "title": "",
+      "slug": "red",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "red"
+    },
+    {
+      "En": "orange",
+      "Thai": "",
+      "title": "",
+      "slug": "orange",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "orange"
+    },
+    {
+      "En": "yellow",
+      "Thai": "",
+      "title": "",
+      "slug": "yellow",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "yellow"
+    },
+    {
+      "En": "green",
+      "Thai": "",
+      "title": "",
+      "slug": "green",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "green"
+    },
+    {
+      "En": "blue",
+      "Thai": "",
+      "title": "",
+      "slug": "blue",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "blue"
+    },
+    {
+      "En": "dark blue",
+      "Thai": "",
+      "title": "",
+      "slug": "dark-blue",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "dark-blue"
+    },
+    {
+      "En": "sky blue",
+      "Thai": "",
+      "title": "",
+      "slug": "sky-blue",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "sky-blue"
+    },
+    {
+      "En": "pruple",
+      "Thai": "",
+      "title": "",
+      "slug": "pruple",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "pruple"
+    }
+  ]
+}

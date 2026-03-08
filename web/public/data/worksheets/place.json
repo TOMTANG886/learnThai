@@ -1,0 +1,215 @@
+{
+  "worksheetName": "place",
+  "worksheetSlug": "place",
+  "columns": [
+    "English",
+    "Thai",
+    "Romanization",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "English": "police station",
+      "Thai": "สถานีตำรวจ",
+      "Romanization": "sà-thăa-nii tam-rùat",
+      "title": "",
+      "slug": "police-station",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "police-station"
+    },
+    {
+      "English": "toilet / restroom",
+      "Thai": "ห้องน้ำ",
+      "Romanization": "hâwng-náam",
+      "title": "",
+      "slug": "toilet-restroom",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "toilet-restroom"
+    },
+    {
+      "English": "bus stop",
+      "Thai": "ป้ายรถเมล์",
+      "Romanization": "bpâai rót-mee",
+      "title": "",
+      "slug": "bus-stop",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bus-stop"
+    },
+    {
+      "English": "train station",
+      "Thai": "สถานีรถไฟ",
+      "Romanization": "sà-thăa-nii rót-fai",
+      "title": "",
+      "slug": "train-station",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "train-station"
+    },
+    {
+      "English": "hotel",
+      "Thai": "โรงแรม",
+      "Romanization": "roong-rɛɛm",
+      "title": "",
+      "slug": "hotel",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "hotel"
+    },
+    {
+      "English": "hospital",
+      "Thai": "โรงพยาบาล",
+      "Romanization": "roong-phá-yaa-baan",
+      "title": "",
+      "slug": "hospital",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "hospital"
+    },
+    {
+      "English": "drug store / pharmacy",
+      "Thai": "ร้านขายยา",
+      "Romanization": "ráan khăai yaa",
+      "title": "",
+      "slug": "drug-store-pharmacy",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "drug-store-pharmacy"
+    },
+    {
+      "English": "gas station",
+      "Thai": "ปั๊มน้ำมัน",
+      "Romanization": "bpám náam-man",
+      "title": "",
+      "slug": "gas-station",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "gas-station"
+    },
+    {
+      "English": "bus terminal",
+      "Thai": "สถานีขนส่ง",
+      "Romanization": "sà-thăa-nii khŏn-sòng",
+      "title": "",
+      "slug": "bus-terminal",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bus-terminal"
+    },
+    {
+      "English": "tourist center",
+      "Thai": "ศูนย์บริการนักท่องเที่ยว",
+      "Romanization": "sǔun bɔɔ-ri-kaan nák-thâwng-thîao",
+      "title": "",
+      "slug": "tourist-center",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "tourist-center"
+    },
+    {
+      "English": "airport",
+      "Thai": "สนามบิน",
+      "Romanization": "sà-năam-bin",
+      "title": "",
+      "slug": "airport",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "airport"
+    },
+    {
+      "English": "market",
+      "Thai": "ตลาด",
+      "Romanization": "dtà-làat",
+      "title": "",
+      "slug": "market",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "market"
+    },
+    {
+      "English": "department store",
+      "Thai": "ห้างสรรพสินค้า",
+      "Romanization": "hâang sàp-pha-sǐn-kháa",
+      "title": "",
+      "slug": "department-store",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "department-store"
+    },
+    {
+      "English": "bank",
+      "Thai": "ธนาคาร",
+      "Romanization": "tha-naa-khaan",
+      "title": "",
+      "slug": "bank",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bank"
+    },
+    {
+      "English": "post station / post office",
+      "Thai": "ไปรษณีย์",
+      "Romanization": "bprai-sà-nii",
+      "title": "",
+      "slug": "post-station-post-office",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "post-station-post-office"
+    },
+    {
+      "English": "school",
+      "Thai": "โรงเรียน",
+      "Romanization": "roong-riian",
+      "title": "",
+      "slug": "school",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "school"
+    },
+    {
+      "English": "shopping",
+      "Thai": "",
+      "Romanization": "",
+      "title": "",
+      "slug": "shopping",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "shopping"
+    },
+    {
+      "English": "work",
+      "Thai": "",
+      "Romanization": "",
+      "title": "",
+      "slug": "work",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "work"
+    },
+    {
+      "English": "meet friends",
+      "Thai": "",
+      "Romanization": "",
+      "title": "",
+      "slug": "meet-friends",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "meet-friends"
+    },
+    {
+      "English": "visit temples",
+      "Thai": "",
+      "Romanization": "",
+      "title": "",
+      "slug": "visit-temples",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "visit-temples"
+    }
+  ]
+}

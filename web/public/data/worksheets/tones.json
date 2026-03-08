@@ -1,0 +1,59 @@
+{
+  "worksheetName": "tones",
+  "worksheetSlug": "tones",
+  "columns": [
+    "En",
+    "Thai",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "mid-tone",
+      "Thai": "กา",
+      "title": "",
+      "slug": "mid-tone",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "mid-tone"
+    },
+    {
+      "En": "rising-tone",
+      "Thai": "ก่า",
+      "title": "",
+      "slug": "rising-tone",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "rising-tone"
+    },
+    {
+      "En": "low-tone",
+      "Thai": "ก้า",
+      "title": "",
+      "slug": "low-tone",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "low-tone"
+    },
+    {
+      "En": "falling-tone",
+      "Thai": "ก๊า",
+      "title": "",
+      "slug": "falling-tone",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "falling-tone"
+    },
+    {
+      "En": "high-tone",
+      "Thai": "ก๋า",
+      "title": "",
+      "slug": "high-tone",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "high-tone"
+    }
+  ]
+}

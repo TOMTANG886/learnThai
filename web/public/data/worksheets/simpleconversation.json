@@ -1,0 +1,205 @@
+{
+  "worksheetName": "simpleConversation",
+  "worksheetSlug": "simpleconversation",
+  "columns": [
+    "En",
+    "Thai",
+    "Pronunciation",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "How are you?",
+      "Thai": "สบายดีไหม",
+      "Pronunciation": "sa baai dii mai",
+      "title": "",
+      "slug": "how-are-you",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "how-are-you"
+    },
+    {
+      "En": "*Have you eaten?",
+      "Thai": "กินข้าวหรือยัง",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "have-you-eaten",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "have-you-eaten"
+    },
+    {
+      "En": "I'm fine.",
+      "Thai": "สบายดี",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "im-fine",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "im-fine"
+    },
+    {
+      "En": "Fine.",
+      "Thai": "ดี",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "fine",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "fine"
+    },
+    {
+      "En": "I'm not fine.",
+      "Thai": "ไม่สบาย",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "im-not-fine",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "im-not-fine"
+    },
+    {
+      "En": "I'm not very well.",
+      "Thai": "ไม่ค่อยสบาย",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "im-not-very-well",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "im-not-very-well"
+    },
+    {
+      "En": "Goodbye!",
+      "Thai": "ลาก่อน",
+      "Pronunciation": "laa-gɔ̀ɔn",
+      "title": "",
+      "slug": "goodbye",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "goodbye"
+    },
+    {
+      "En": "See you!",
+      "Thai": "แล้วเจอกัน",
+      "Pronunciation": "lɛ́ɛo jəə gan",
+      "title": "",
+      "slug": "see-you",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "see-you"
+    },
+    {
+      "En": "Bye!",
+      "Thai": "บาย",
+      "Pronunciation": "baai",
+      "title": "",
+      "slug": "bye",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bye"
+    },
+    {
+      "En": "I'm off!",
+      "Thai": "ไปก่อนนะ",
+      "Pronunciation": "pai gɔ̀ɔn ná",
+      "title": "",
+      "slug": "im-off",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "im-off"
+    },
+    {
+      "En": "I'm Sorry.",
+      "Thai": "ขอโทษครับ/ค่ะ",
+      "Pronunciation": "khɔ̌ɔ-thôot khráp/kâ",
+      "title": "",
+      "slug": "im-sorry",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "im-sorry"
+    },
+    {
+      "En": "Sorry!",
+      "Thai": "โทษที",
+      "Pronunciation": "thôot thii",
+      "title": "",
+      "slug": "sorry",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "sorry"
+    },
+    {
+      "En": "It's okay!",
+      "Thai": "ไม่เป็นไร",
+      "Pronunciation": "mâi bpen rai",
+      "title": "",
+      "slug": "its-okay",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "its-okay"
+    },
+    {
+      "En": "Thank you.",
+      "Thai": "ขอบคุณครับ/ค่ะ",
+      "Pronunciation": "khɔ̀ɔp-khun khráp/kâ",
+      "title": "",
+      "slug": "thank-you",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "thank-you"
+    },
+    {
+      "En": "You're welcome.",
+      "Thai": "ยินดีครับ/ค่ะ",
+      "Pronunciation": "yin-dii khráp/kâ",
+      "title": "",
+      "slug": "youre-welcome",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "youre-welcome"
+    },
+    {
+      "En": "Where are you going?",
+      "Thai": "ไปไหน",
+      "Pronunciation": "pai nǎi",
+      "title": "",
+      "slug": "where-are-you-going",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "where-are-you-going"
+    },
+    {
+      "En": "Go to _ .",
+      "Thai": "ไปที่ _",
+      "Pronunciation": "pai thîi _",
+      "title": "",
+      "slug": "go-to",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "go-to"
+    },
+    {
+      "En": "Where is _?",
+      "Thai": "_ อยู่ที่ไหน",
+      "Pronunciation": "_ yùu thîi nǎi",
+      "title": "",
+      "slug": "where-is",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "where-is"
+    },
+    {
+      "En": "I want to go to _ .",
+      "Thai": "ฉันอยากไปที่ _",
+      "Pronunciation": "chǎn yàak pai thîi _ (♂ use ผมอยากไปที่ _ phǒm yàak pai thîi _)",
+      "title": "",
+      "slug": "i-want-to-go-to",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "i-want-to-go-to"
+    }
+  ]
+}

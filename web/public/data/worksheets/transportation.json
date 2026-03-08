@@ -1,0 +1,149 @@
+{
+  "worksheetName": "transportation",
+  "worksheetSlug": "transportation",
+  "columns": [
+    "En",
+    "Thai",
+    "title",
+    "slug",
+    "body_markdown",
+    "publish_flag"
+  ],
+  "rows": [
+    {
+      "En": "bicycle",
+      "Thai": "จักรยาน",
+      "title": "",
+      "slug": "bicycle",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bicycle"
+    },
+    {
+      "En": "boat",
+      "Thai": "เรือ",
+      "title": "",
+      "slug": "boat",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "boat"
+    },
+    {
+      "En": "car",
+      "Thai": "รถ",
+      "title": "",
+      "slug": "car",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "car"
+    },
+    {
+      "En": "rental car",
+      "Thai": "รถเช่า",
+      "title": "",
+      "slug": "rental-car",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "rental-car"
+    },
+    {
+      "En": "bus",
+      "Thai": "",
+      "title": "",
+      "slug": "bus",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "bus"
+    },
+    {
+      "En": "van",
+      "Thai": "",
+      "title": "",
+      "slug": "van",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "van"
+    },
+    {
+      "En": "pick up truck with two long bench seats in the back along the sides",
+      "Thai": "",
+      "title": "",
+      "slug": "pick-up-truck-with-two-long-bench-seats-in-the-back-along-the-sides",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "pick-up-truck-with-two-long-bench-seats-in-the-back-along-the-sides"
+    },
+    {
+      "En": "train",
+      "Thai": "",
+      "title": "",
+      "slug": "train",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "train"
+    },
+    {
+      "En": "sky train",
+      "Thai": "",
+      "title": "",
+      "slug": "sky-train",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "sky-train"
+    },
+    {
+      "En": "subway",
+      "Thai": "",
+      "title": "",
+      "slug": "subway",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "subway"
+    },
+    {
+      "En": "airplain",
+      "Thai": "",
+      "title": "",
+      "slug": "airplain",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "airplain"
+    },
+    {
+      "En": "tuktuk",
+      "Thai": "",
+      "title": "",
+      "slug": "tuktuk",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "tuktuk"
+    },
+    {
+      "En": "motorcycle",
+      "Thai": "",
+      "title": "",
+      "slug": "motorcycle",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "motorcycle"
+    },
+    {
+      "En": "taxi",
+      "Thai": "แท็กซี่",
+      "title": "",
+      "slug": "taxi",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "taxi"
+    },
+    {
+      "En": "airport link",
+      "Thai": "",
+      "title": "",
+      "slug": "airport-link",
+      "body_markdown": "",
+      "publish_flag": "TRUE",
+      "_slug": "airport-link"
+    }
+  ]
+}
