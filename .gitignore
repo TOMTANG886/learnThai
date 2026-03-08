@@ -1,7 +1,42 @@
-node_modules
-dist
-.env.local
+# Dependencies
+node_modules/
+web/node_modules/
+
+# Build outputs
+dist/
+out/
+web/.next/
+web/out/
+web/dist/
+
+# Test outputs
+coverage/
+web/coverage/
+
+# Environment files (keep examples if you add them)
 .env
+.env.*
+!.env.example
+web/.env
+web/.env.*
+!web/.env.example
+
+# Secrets / local credentials
 credential.json
-out
-.next
+web/credential.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
