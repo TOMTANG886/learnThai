@@ -24,7 +24,7 @@
     {
       "En": "*Have you eaten?",
       "Thai": "กินข้าวหรือยัง",
-      "Pronunciation": "",
+      "Pronunciation": "gin-khâao rǔe-yang",
       "title": "",
       "slug": "have-you-eaten",
       "body_markdown": "",
@@ -32,9 +32,19 @@
       "_slug": "have-you-eaten"
     },
     {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "En": "I'm fine.",
       "Thai": "สบายดี",
-      "Pronunciation": "",
+      "Pronunciation": "sa-bai-dii",
       "title": "",
       "slug": "im-fine",
       "body_markdown": "",
@@ -44,7 +54,7 @@
     {
       "En": "Fine.",
       "Thai": "ดี",
-      "Pronunciation": "",
+      "Pronunciation": "dii",
       "title": "",
       "slug": "fine",
       "body_markdown": "",
@@ -52,9 +62,19 @@
       "_slug": "fine"
     },
     {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "En": "I'm not fine.",
       "Thai": "ไม่สบาย",
-      "Pronunciation": "",
+      "Pronunciation": "mâi-sa-bai",
       "title": "",
       "slug": "im-not-fine",
       "body_markdown": "",
@@ -64,12 +84,22 @@
     {
       "En": "I'm not very well.",
       "Thai": "ไม่ค่อยสบาย",
-      "Pronunciation": "",
+      "Pronunciation": "mâi-khôi sa-bai",
       "title": "",
       "slug": "im-not-very-well",
       "body_markdown": "",
       "publish_flag": "TRUE",
       "_slug": "im-not-very-well"
+    },
+    {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
     },
     {
       "En": "Goodbye!",
@@ -112,6 +142,16 @@
       "_slug": "im-off"
     },
     {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "En": "I'm Sorry.",
       "Thai": "ขอโทษครับ/ค่ะ",
       "Pronunciation": "khɔ̌ɔ-thôot khráp/kâ",
@@ -142,6 +182,26 @@
       "_slug": "its-okay"
     },
     {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "En": "Thank you.",
       "Thai": "ขอบคุณครับ/ค่ะ",
       "Pronunciation": "khɔ̀ɔp-khun khráp/kâ",
@@ -160,6 +220,26 @@
       "body_markdown": "",
       "publish_flag": "TRUE",
       "_slug": "youre-welcome"
+    },
+    {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
+      "En": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
     },
     {
       "En": "Where are you going?",

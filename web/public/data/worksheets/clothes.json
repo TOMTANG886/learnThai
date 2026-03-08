@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -13,6 +14,7 @@
     {
       "En": "hat",
       "Thai": "หมวก",
+      "Pronunciation": "mùak",
       "title": "",
       "slug": "hat",
       "body_markdown": "",
@@ -22,6 +24,7 @@
     {
       "En": "glasses",
       "Thai": "แว่นตา",
+      "Pronunciation": "wâen-dtaa",
       "title": "",
       "slug": "glasses",
       "body_markdown": "",
@@ -31,6 +34,7 @@
     {
       "En": "scarf",
       "Thai": "ผ้าพันคอ",
+      "Pronunciation": "phâa-phan-khɔɔ",
       "title": "",
       "slug": "scarf",
       "body_markdown": "",
@@ -40,6 +44,7 @@
     {
       "En": "Gloves",
       "Thai": "ถุงมือ",
+      "Pronunciation": "thǔng-mʉʉ",
       "title": "",
       "slug": "gloves",
       "body_markdown": "",
@@ -49,6 +54,7 @@
     {
       "En": "Face mask",
       "Thai": "หน้ากาก",
+      "Pronunciation": "nâa-gàak",
       "title": "",
       "slug": "face-mask",
       "body_markdown": "",
@@ -58,6 +64,7 @@
     {
       "En": "mask",
       "Thai": "หน้ากาก",
+      "Pronunciation": "nâa-gàak",
       "title": "",
       "slug": "mask",
       "body_markdown": "",
@@ -67,6 +74,7 @@
     {
       "En": "pants",
       "Thai": "กางเกง",
+      "Pronunciation": "gaang-geeng",
       "title": "",
       "slug": "pants",
       "body_markdown": "",
@@ -76,6 +84,7 @@
     {
       "En": "shorts",
       "Thai": "กางเกงขาสั้น",
+      "Pronunciation": "gaang-geeng khǎa-sân",
       "title": "",
       "slug": "shorts",
       "body_markdown": "",
@@ -85,6 +94,7 @@
     {
       "En": "underwear",
       "Thai": "กางเกงใน",
+      "Pronunciation": "gaang-geeng nai",
       "title": "",
       "slug": "underwear",
       "body_markdown": "",
@@ -94,6 +104,7 @@
     {
       "En": "bra",
       "Thai": "",
+      "Pronunciation": "sʉ̂a-chán-nai",
       "title": "",
       "slug": "bra",
       "body_markdown": "",
@@ -103,6 +114,7 @@
     {
       "En": "pyjamas",
       "Thai": "ชุดนอน",
+      "Pronunciation": "chút-nɔɔn",
       "title": "",
       "slug": "pyjamas",
       "body_markdown": "",
@@ -112,6 +124,7 @@
     {
       "En": "bikini",
       "Thai": "บิกินี่",
+      "Pronunciation": "bi-gi-nîi",
       "title": "",
       "slug": "bikini",
       "body_markdown": "",
@@ -121,6 +134,7 @@
     {
       "En": "swimsuit",
       "Thai": "ชุดว่ายน้ำ",
+      "Pronunciation": "chút-wâai-náam",
       "title": "",
       "slug": "swimsuit",
       "body_markdown": "",
@@ -130,6 +144,7 @@
     {
       "En": "shirt",
       "Thai": "เสื้อ",
+      "Pronunciation": "sʉ̂a",
       "title": "",
       "slug": "shirt",
       "body_markdown": "",
@@ -139,6 +154,7 @@
     {
       "En": "t-shirt",
       "Thai": "เสื้อยืด",
+      "Pronunciation": "sʉ̂a-yʉ̂ʉt",
       "title": "",
       "slug": "t-shirt",
       "body_markdown": "",
@@ -148,6 +164,7 @@
     {
       "En": "long sleeve shirt",
       "Thai": "เสื้อแขนยาว",
+      "Pronunciation": "sʉ̂a khǎen-yaao",
       "title": "",
       "slug": "long-sleeve-shirt",
       "body_markdown": "",
@@ -157,6 +174,7 @@
     {
       "En": "socks",
       "Thai": "ถุงเท้า",
+      "Pronunciation": "thǔng-tháao",
       "title": "",
       "slug": "socks",
       "body_markdown": "",
@@ -166,6 +184,7 @@
     {
       "En": "shoes",
       "Thai": "รองเท้า",
+      "Pronunciation": "rɔɔng-tháao",
       "title": "",
       "slug": "shoes",
       "body_markdown": "",
@@ -175,6 +194,7 @@
     {
       "En": "sandals",
       "Thai": "รองเท้าแตะ",
+      "Pronunciation": "rɔɔng-tháao tàe",
       "title": "",
       "slug": "sandals",
       "body_markdown": "",
@@ -184,6 +204,7 @@
     {
       "En": "thai dress",
       "Thai": "ชุดไทย",
+      "Pronunciation": "chút-thai",
       "title": "",
       "slug": "thai-dress",
       "body_markdown": "",

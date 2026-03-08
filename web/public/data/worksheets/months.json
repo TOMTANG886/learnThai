@@ -145,13 +145,24 @@
       "_slug": "december"
     },
     {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "Abbreviation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "English": "*31 Days",
       "Thai": "คม",
       "Pronunciation": "Khom",
       "Abbreviation": "",
       "title": "",
       "slug": "",
-      "body_markdown": "~~~",
+      "body_markdown": "",
       "publish_flag": "TRUE",
       "_slug": ""
     },
@@ -162,7 +173,7 @@
       "Abbreviation": "",
       "title": "",
       "slug": "",
-      "body_markdown": "@@@",
+      "body_markdown": "",
       "publish_flag": "TRUE",
       "_slug": ""
     }

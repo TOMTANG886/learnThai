@@ -16,7 +16,7 @@
       "title": "",
       "slug": "0",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "0"
     },
     {
@@ -25,7 +25,7 @@
       "title": "",
       "slug": "100",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "100"
     },
     {
@@ -34,7 +34,7 @@
       "title": "",
       "slug": "200",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "200"
     },
     {
@@ -43,7 +43,7 @@
       "title": "",
       "slug": "300",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "300"
     },
     {
@@ -52,7 +52,7 @@
       "title": "",
       "slug": "400",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "400"
     },
     {
@@ -61,7 +61,7 @@
       "title": "",
       "slug": "500",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "500"
     },
     {
@@ -70,7 +70,7 @@
       "title": "",
       "slug": "600",
       "body_markdown": "",
-      "publish_flag": "TRUE",
+      "publish_flag": "",
       "_slug": "600"
     }
   ]

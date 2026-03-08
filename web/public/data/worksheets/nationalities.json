@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -12,7 +13,8 @@
   "rows": [
     {
       "En": "Chinese",
-      "Thai": "",
+      "Thai": "จีน",
+      "Pronunciation": "jiin",
       "title": "",
       "slug": "chinese",
       "body_markdown": "",
@@ -21,7 +23,8 @@
     },
     {
       "En": "Malaysia",
-      "Thai": "",
+      "Thai": "มาเลเซีย",
+      "Pronunciation": "maa-lee-sia",
       "title": "",
       "slug": "malaysia",
       "body_markdown": "",
@@ -30,7 +33,8 @@
     },
     {
       "En": "Singapore",
-      "Thai": "",
+      "Thai": "สิงคโปร์",
+      "Pronunciation": "sǐng-kha-po",
       "title": "",
       "slug": "singapore",
       "body_markdown": "",
@@ -39,7 +43,8 @@
     },
     {
       "En": "Japanese",
-      "Thai": "",
+      "Thai": "ญี่ปุ่น",
+      "Pronunciation": "yîi-bpùn",
       "title": "",
       "slug": "japanese",
       "body_markdown": "",
@@ -48,7 +53,8 @@
     },
     {
       "En": "Korea",
-      "Thai": "",
+      "Thai": "เกาหลี",
+      "Pronunciation": "gao-lǐi",
       "title": "",
       "slug": "korea",
       "body_markdown": "",
@@ -57,7 +63,8 @@
     },
     {
       "En": "English",
-      "Thai": "",
+      "Thai": "อังกฤษ",
+      "Pronunciation": "ang-grìt",
       "title": "",
       "slug": "english",
       "body_markdown": "",

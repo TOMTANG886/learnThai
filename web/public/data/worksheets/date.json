@@ -42,9 +42,19 @@
       "_slug": "20251111"
     },
     {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "English": "year",
       "Thai": "ปี",
-      "Pronunciation": "",
+      "Pronunciation": "bpii",
       "title": "",
       "slug": "year",
       "body_markdown": "",
@@ -54,7 +64,7 @@
     {
       "English": "month",
       "Thai": "เดือน",
-      "Pronunciation": "",
+      "Pronunciation": "dʉan",
       "title": "",
       "slug": "month",
       "body_markdown": "",
@@ -64,7 +74,7 @@
     {
       "English": "day",
       "Thai": "วัน",
-      "Pronunciation": "",
+      "Pronunciation": "wan",
       "title": "",
       "slug": "day",
       "body_markdown": "",
@@ -72,9 +82,19 @@
       "_slug": "day"
     },
     {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
       "English": "week",
       "Thai": "สัปดาห์",
-      "Pronunciation": "",
+      "Pronunciation": "sàp-daa",
       "title": "",
       "slug": "week",
       "body_markdown": "",

@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -13,6 +14,7 @@
     {
       "En": "0",
       "Thai": "ศูนย์",
+      "Pronunciation": "sǔun",
       "title": "",
       "slug": "0",
       "body_markdown": "",
@@ -22,6 +24,7 @@
     {
       "En": "1",
       "Thai": "หนึ่ง",
+      "Pronunciation": "nèung",
       "title": "",
       "slug": "1",
       "body_markdown": "",
@@ -31,6 +34,7 @@
     {
       "En": "2",
       "Thai": "สอง",
+      "Pronunciation": "sǎawng",
       "title": "",
       "slug": "2",
       "body_markdown": "",
@@ -40,6 +44,7 @@
     {
       "En": "3",
       "Thai": "สาม",
+      "Pronunciation": "sǎam",
       "title": "",
       "slug": "3",
       "body_markdown": "",
@@ -49,6 +54,7 @@
     {
       "En": "4",
       "Thai": "สี่",
+      "Pronunciation": "sìi",
       "title": "",
       "slug": "4",
       "body_markdown": "",
@@ -58,6 +64,7 @@
     {
       "En": "5",
       "Thai": "ห้า",
+      "Pronunciation": "hâa",
       "title": "",
       "slug": "5",
       "body_markdown": "",
@@ -67,6 +74,7 @@
     {
       "En": "6",
       "Thai": "หก",
+      "Pronunciation": "hòk",
       "title": "",
       "slug": "6",
       "body_markdown": "",
@@ -76,6 +84,7 @@
     {
       "En": "7",
       "Thai": "เจ็ด",
+      "Pronunciation": "jèt",
       "title": "",
       "slug": "7",
       "body_markdown": "",
@@ -85,6 +94,7 @@
     {
       "En": "8",
       "Thai": "แปด",
+      "Pronunciation": "bpàet",
       "title": "",
       "slug": "8",
       "body_markdown": "",
@@ -94,6 +104,7 @@
     {
       "En": "9",
       "Thai": "เก้า",
+      "Pronunciation": "gâo",
       "title": "",
       "slug": "9",
       "body_markdown": "",
@@ -103,6 +114,7 @@
     {
       "En": "10",
       "Thai": "สิบ",
+      "Pronunciation": "sìp",
       "title": "",
       "slug": "10",
       "body_markdown": "",
@@ -112,6 +124,7 @@
     {
       "En": "11",
       "Thai": "สิบเอ็ด",
+      "Pronunciation": "sìp-èt",
       "title": "",
       "slug": "11",
       "body_markdown": "",
@@ -121,6 +134,7 @@
     {
       "En": "12",
       "Thai": "สิบสอง",
+      "Pronunciation": "sìp-sǎawng",
       "title": "",
       "slug": "12",
       "body_markdown": "",
@@ -130,6 +144,7 @@
     {
       "En": "13",
       "Thai": "สิบสาม",
+      "Pronunciation": "sìp-sǎam",
       "title": "",
       "slug": "13",
       "body_markdown": "",
@@ -139,6 +154,7 @@
     {
       "En": "14",
       "Thai": "สิบสี่",
+      "Pronunciation": "sìp-sìi",
       "title": "",
       "slug": "14",
       "body_markdown": "",
@@ -148,6 +164,7 @@
     {
       "En": "15",
       "Thai": "สิบห้า",
+      "Pronunciation": "sìp-hâa",
       "title": "",
       "slug": "15",
       "body_markdown": "",
@@ -157,6 +174,7 @@
     {
       "En": "16",
       "Thai": "สิบหก",
+      "Pronunciation": "sìp-hòk",
       "title": "",
       "slug": "16",
       "body_markdown": "",
@@ -166,6 +184,7 @@
     {
       "En": "17",
       "Thai": "สิบเจ็ด",
+      "Pronunciation": "sìp-jèt",
       "title": "",
       "slug": "17",
       "body_markdown": "",
@@ -175,6 +194,7 @@
     {
       "En": "18",
       "Thai": "สิบแปด",
+      "Pronunciation": "sìp-bpàet",
       "title": "",
       "slug": "18",
       "body_markdown": "",
@@ -184,6 +204,7 @@
     {
       "En": "19",
       "Thai": "สิบเก้า",
+      "Pronunciation": "sìp-gâo",
       "title": "",
       "slug": "19",
       "body_markdown": "",
@@ -193,6 +214,7 @@
     {
       "En": "20",
       "Thai": "ยี่สิบ",
+      "Pronunciation": "yîi-sìp",
       "title": "",
       "slug": "20",
       "body_markdown": "",
@@ -202,6 +224,7 @@
     {
       "En": "30",
       "Thai": "三สิบ",
+      "Pronunciation": "sǎam-sìp",
       "title": "",
       "slug": "30",
       "body_markdown": "",
@@ -211,6 +234,7 @@
     {
       "En": "40",
       "Thai": "四สิบ",
+      "Pronunciation": "sìi-sìp",
       "title": "",
       "slug": "40",
       "body_markdown": "",
@@ -220,6 +244,7 @@
     {
       "En": "50",
       "Thai": "五สิบ",
+      "Pronunciation": "hâa-sìp",
       "title": "",
       "slug": "50",
       "body_markdown": "",
@@ -229,6 +254,7 @@
     {
       "En": "60",
       "Thai": "六สิบ",
+      "Pronunciation": "hòk-sìp",
       "title": "",
       "slug": "60",
       "body_markdown": "",
@@ -238,6 +264,7 @@
     {
       "En": "70",
       "Thai": "七สิบ",
+      "Pronunciation": "jèt-sìp",
       "title": "",
       "slug": "70",
       "body_markdown": "",
@@ -247,6 +274,7 @@
     {
       "En": "80",
       "Thai": "八สิบ",
+      "Pronunciation": "bpàet-sìp",
       "title": "",
       "slug": "80",
       "body_markdown": "",
@@ -256,6 +284,7 @@
     {
       "En": "90",
       "Thai": "九สิบ",
+      "Pronunciation": "gâo-sìp",
       "title": "",
       "slug": "90",
       "body_markdown": "",
@@ -265,6 +294,7 @@
     {
       "En": "100",
       "Thai": "ร้อย",
+      "Pronunciation": "rói",
       "title": "",
       "slug": "100",
       "body_markdown": "",

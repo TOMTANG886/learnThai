@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -13,6 +14,7 @@
     {
       "En": "bicycle",
       "Thai": "จักรยาน",
+      "Pronunciation": "jak-grà-yaan",
       "title": "",
       "slug": "bicycle",
       "body_markdown": "",
@@ -22,6 +24,7 @@
     {
       "En": "boat",
       "Thai": "เรือ",
+      "Pronunciation": "ruea",
       "title": "",
       "slug": "boat",
       "body_markdown": "",
@@ -31,6 +34,7 @@
     {
       "En": "car",
       "Thai": "รถ",
+      "Pronunciation": "rót",
       "title": "",
       "slug": "car",
       "body_markdown": "",
@@ -40,6 +44,7 @@
     {
       "En": "rental car",
       "Thai": "รถเช่า",
+      "Pronunciation": "rót-châo",
       "title": "",
       "slug": "rental-car",
       "body_markdown": "",
@@ -48,7 +53,8 @@
     },
     {
       "En": "bus",
-      "Thai": "",
+      "Thai": "รถบัส",
+      "Pronunciation": "rót-bát",
       "title": "",
       "slug": "bus",
       "body_markdown": "",
@@ -57,7 +63,8 @@
     },
     {
       "En": "van",
-      "Thai": "",
+      "Thai": "รถตู้",
+      "Pronunciation": "rót-tûu",
       "title": "",
       "slug": "van",
       "body_markdown": "",
@@ -65,17 +72,19 @@
       "_slug": "van"
     },
     {
-      "En": "pick up truck with two long bench seats in the back along the sides",
-      "Thai": "",
+      "En": "pick up truck",
+      "Thai": "สองแถว",
+      "Pronunciation": "sǎawng-thǎew (songthaew)",
       "title": "",
-      "slug": "pick-up-truck-with-two-long-bench-seats-in-the-back-along-the-sides",
-      "body_markdown": "",
+      "slug": "pick-up-truck",
+      "body_markdown": "with-two-long-bench-seats-in-the-back-along-the-sides",
       "publish_flag": "TRUE",
-      "_slug": "pick-up-truck-with-two-long-bench-seats-in-the-back-along-the-sides"
+      "_slug": "pick-up-truck"
     },
     {
       "En": "train",
-      "Thai": "",
+      "Thai": "รถไฟ",
+      "Pronunciation": "rót-fai",
       "title": "",
       "slug": "train",
       "body_markdown": "",
@@ -84,7 +93,8 @@
     },
     {
       "En": "sky train",
-      "Thai": "",
+      "Thai": "รถไฟฟ้า",
+      "Pronunciation": "rót-fai-fáa",
       "title": "",
       "slug": "sky-train",
       "body_markdown": "",
@@ -93,7 +103,8 @@
     },
     {
       "En": "subway",
-      "Thai": "",
+      "Thai": "รถไฟฟ้าใต้ดิน",
+      "Pronunciation": "rót-fai-fáa tâi-din",
       "title": "",
       "slug": "subway",
       "body_markdown": "",
@@ -101,8 +112,9 @@
       "_slug": "subway"
     },
     {
-      "En": "airplain",
-      "Thai": "",
+      "En": "airplane",
+      "Thai": "เครื่องบิน",
+      "Pronunciation": "krûeang-bin",
       "title": "",
       "slug": "airplain",
       "body_markdown": "",
@@ -111,7 +123,8 @@
     },
     {
       "En": "tuktuk",
-      "Thai": "",
+      "Thai": "ตุ๊กตุ๊ก",
+      "Pronunciation": "túk-túk",
       "title": "",
       "slug": "tuktuk",
       "body_markdown": "",
@@ -120,7 +133,8 @@
     },
     {
       "En": "motorcycle",
-      "Thai": "",
+      "Thai": "รถจักรยานยนต์",
+      "Pronunciation": "rót-jàk-grà-yaan-yon",
       "title": "",
       "slug": "motorcycle",
       "body_markdown": "",
@@ -130,6 +144,7 @@
     {
       "En": "taxi",
       "Thai": "แท็กซี่",
+      "Pronunciation": "táek-sîi",
       "title": "",
       "slug": "taxi",
       "body_markdown": "",
@@ -138,7 +153,8 @@
     },
     {
       "En": "airport link",
-      "Thai": "",
+      "Thai": "แอร์พอร์ตลิงก์",
+      "Pronunciation": "air-port ling",
       "title": "",
       "slug": "airport-link",
       "body_markdown": "",

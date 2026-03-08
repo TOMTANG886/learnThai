@@ -4,7 +4,7 @@
   "columns": [
     "English",
     "Thai",
-    "Romanization",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -14,7 +14,7 @@
     {
       "English": "police station",
       "Thai": "สถานีตำรวจ",
-      "Romanization": "sà-thăa-nii tam-rùat",
+      "Pronunciation": "sà-thăa-nii tam-rùat",
       "title": "",
       "slug": "police-station",
       "body_markdown": "",
@@ -24,7 +24,7 @@
     {
       "English": "toilet / restroom",
       "Thai": "ห้องน้ำ",
-      "Romanization": "hâwng-náam",
+      "Pronunciation": "hâwng-náam",
       "title": "",
       "slug": "toilet-restroom",
       "body_markdown": "",
@@ -34,7 +34,7 @@
     {
       "English": "bus stop",
       "Thai": "ป้ายรถเมล์",
-      "Romanization": "bpâai rót-mee",
+      "Pronunciation": "bpâai rót-mee",
       "title": "",
       "slug": "bus-stop",
       "body_markdown": "",
@@ -44,7 +44,7 @@
     {
       "English": "train station",
       "Thai": "สถานีรถไฟ",
-      "Romanization": "sà-thăa-nii rót-fai",
+      "Pronunciation": "sà-thăa-nii rót-fai",
       "title": "",
       "slug": "train-station",
       "body_markdown": "",
@@ -54,7 +54,7 @@
     {
       "English": "hotel",
       "Thai": "โรงแรม",
-      "Romanization": "roong-rɛɛm",
+      "Pronunciation": "roong-rɛɛm",
       "title": "",
       "slug": "hotel",
       "body_markdown": "",
@@ -64,7 +64,7 @@
     {
       "English": "hospital",
       "Thai": "โรงพยาบาล",
-      "Romanization": "roong-phá-yaa-baan",
+      "Pronunciation": "roong-phá-yaa-baan",
       "title": "",
       "slug": "hospital",
       "body_markdown": "",
@@ -74,7 +74,7 @@
     {
       "English": "drug store / pharmacy",
       "Thai": "ร้านขายยา",
-      "Romanization": "ráan khăai yaa",
+      "Pronunciation": "ráan khăai yaa",
       "title": "",
       "slug": "drug-store-pharmacy",
       "body_markdown": "",
@@ -84,7 +84,7 @@
     {
       "English": "gas station",
       "Thai": "ปั๊มน้ำมัน",
-      "Romanization": "bpám náam-man",
+      "Pronunciation": "bpám náam-man",
       "title": "",
       "slug": "gas-station",
       "body_markdown": "",
@@ -94,7 +94,7 @@
     {
       "English": "bus terminal",
       "Thai": "สถานีขนส่ง",
-      "Romanization": "sà-thăa-nii khŏn-sòng",
+      "Pronunciation": "sà-thăa-nii khŏn-sòng",
       "title": "",
       "slug": "bus-terminal",
       "body_markdown": "",
@@ -104,7 +104,7 @@
     {
       "English": "tourist center",
       "Thai": "ศูนย์บริการนักท่องเที่ยว",
-      "Romanization": "sǔun bɔɔ-ri-kaan nák-thâwng-thîao",
+      "Pronunciation": "sǔun bɔɔ-ri-kaan nák-thâwng-thîao",
       "title": "",
       "slug": "tourist-center",
       "body_markdown": "",
@@ -114,7 +114,7 @@
     {
       "English": "airport",
       "Thai": "สนามบิน",
-      "Romanization": "sà-năam-bin",
+      "Pronunciation": "sà-năam-bin",
       "title": "",
       "slug": "airport",
       "body_markdown": "",
@@ -124,7 +124,7 @@
     {
       "English": "market",
       "Thai": "ตลาด",
-      "Romanization": "dtà-làat",
+      "Pronunciation": "dtà-làat",
       "title": "",
       "slug": "market",
       "body_markdown": "",
@@ -134,7 +134,7 @@
     {
       "English": "department store",
       "Thai": "ห้างสรรพสินค้า",
-      "Romanization": "hâang sàp-pha-sǐn-kháa",
+      "Pronunciation": "hâang sàp-pha-sǐn-kháa",
       "title": "",
       "slug": "department-store",
       "body_markdown": "",
@@ -144,7 +144,7 @@
     {
       "English": "bank",
       "Thai": "ธนาคาร",
-      "Romanization": "tha-naa-khaan",
+      "Pronunciation": "tha-naa-khaan",
       "title": "",
       "slug": "bank",
       "body_markdown": "",
@@ -154,7 +154,7 @@
     {
       "English": "post station / post office",
       "Thai": "ไปรษณีย์",
-      "Romanization": "bprai-sà-nii",
+      "Pronunciation": "bprai-sà-nii",
       "title": "",
       "slug": "post-station-post-office",
       "body_markdown": "",
@@ -164,7 +164,7 @@
     {
       "English": "school",
       "Thai": "โรงเรียน",
-      "Romanization": "roong-riian",
+      "Pronunciation": "roong-riian",
       "title": "",
       "slug": "school",
       "body_markdown": "",
@@ -172,9 +172,39 @@
       "_slug": "school"
     },
     {
-      "English": "shopping",
+      "English": "",
       "Thai": "",
-      "Romanization": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
+      "English": "",
+      "Thai": "",
+      "Pronunciation": "",
+      "title": "",
+      "slug": "",
+      "body_markdown": "",
+      "publish_flag": "",
+      "_slug": ""
+    },
+    {
+      "English": "shopping",
+      "Thai": "ช้อปปิ้ง",
+      "Pronunciation": "chóp-pîng",
       "title": "",
       "slug": "shopping",
       "body_markdown": "",
@@ -183,8 +213,8 @@
     },
     {
       "English": "work",
-      "Thai": "",
-      "Romanization": "",
+      "Thai": "ทำงาน",
+      "Pronunciation": "tham-ngaan",
       "title": "",
       "slug": "work",
       "body_markdown": "",
@@ -193,8 +223,8 @@
     },
     {
       "English": "meet friends",
-      "Thai": "",
-      "Romanization": "",
+      "Thai": "พบปะเพื่อนฝูง",
+      "Pronunciation": "phóp-pà phûean-fǔung",
       "title": "",
       "slug": "meet-friends",
       "body_markdown": "",
@@ -203,8 +233,8 @@
     },
     {
       "English": "visit temples",
-      "Thai": "",
-      "Romanization": "",
+      "Thai": "เที่ยวชมวัด",
+      "Pronunciation": "thîao-chom wát",
       "title": "",
       "slug": "visit-temples",
       "body_markdown": "",

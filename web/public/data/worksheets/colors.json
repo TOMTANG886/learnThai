@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -12,7 +13,8 @@
   "rows": [
     {
       "En": "black",
-      "Thai": "",
+      "Thai": "สีดำ",
+      "Pronunciation": "sǐi dam",
       "title": "",
       "slug": "black",
       "body_markdown": "",
@@ -21,7 +23,8 @@
     },
     {
       "En": "white",
-      "Thai": "",
+      "Thai": "สีขาว",
+      "Pronunciation": "sǐi khǎao",
       "title": "",
       "slug": "white",
       "body_markdown": "",
@@ -30,7 +33,8 @@
     },
     {
       "En": "red",
-      "Thai": "",
+      "Thai": "สีแดง",
+      "Pronunciation": "sǐi dɛɛng",
       "title": "",
       "slug": "red",
       "body_markdown": "",
@@ -39,7 +43,8 @@
     },
     {
       "En": "orange",
-      "Thai": "",
+      "Thai": "สีส้ม",
+      "Pronunciation": "sǐi sôm",
       "title": "",
       "slug": "orange",
       "body_markdown": "",
@@ -48,7 +53,8 @@
     },
     {
       "En": "yellow",
-      "Thai": "",
+      "Thai": "สีเหลือง",
+      "Pronunciation": "sǐi lʉ̌ʉang",
       "title": "",
       "slug": "yellow",
       "body_markdown": "",
@@ -57,7 +63,8 @@
     },
     {
       "En": "green",
-      "Thai": "",
+      "Thai": "สีเขียว",
+      "Pronunciation": "sǐi khǐao",
       "title": "",
       "slug": "green",
       "body_markdown": "",
@@ -66,7 +73,8 @@
     },
     {
       "En": "blue",
-      "Thai": "",
+      "Thai": "สีน้ำเงิน",
+      "Pronunciation": "sǐi náam-ngern",
       "title": "",
       "slug": "blue",
       "body_markdown": "",
@@ -75,7 +83,8 @@
     },
     {
       "En": "dark blue",
-      "Thai": "",
+      "Thai": "สีน้ำเงินเข้ม",
+      "Pronunciation": "sǐi náam-ngern khêm",
       "title": "",
       "slug": "dark-blue",
       "body_markdown": "",
@@ -84,7 +93,8 @@
     },
     {
       "En": "sky blue",
-      "Thai": "",
+      "Thai": "สีฟ้า",
+      "Pronunciation": "sǐi fáa",
       "title": "",
       "slug": "sky-blue",
       "body_markdown": "",
@@ -93,7 +103,8 @@
     },
     {
       "En": "pruple",
-      "Thai": "",
+      "Thai": "สีม่วง",
+      "Pronunciation": "sǐi mûang",
       "title": "",
       "slug": "pruple",
       "body_markdown": "",

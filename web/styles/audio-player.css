@@ -1,0 +1,32 @@
+/* web/styles/audio-player.css
+ * Optional styling for the AudioPlayer component.
+ * Apply these styles via the className prop: <AudioPlayer className="worksheet-audio-player" />
+ */
+
+/* Full-width player with rounded corners */
+.worksheet-audio-player {
+  display: block;
+  width: 100%;
+  margin: 1rem 0 1.5rem;
+  border-radius: 8px;
+  background: #f8f9fa;
+}
+
+/* Standalone post-level player (smaller margin) */
+.post-audio-player {
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0 1rem;
+  border-radius: 4px;
+}
+
+/* Error fallback message */
+.audio-error {
+  padding: 0.75rem 1rem;
+  background: #fff3cd;
+  border: 1px solid #ffc107;
+  border-radius: 4px;
+  color: #856404;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}

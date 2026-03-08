@@ -14,6 +14,7 @@ export interface WorksheetMeta {
   worksheetName: string;
   worksheetSlug: string;
   rowCount: number;
+  audioHash?: string;
 }
 
 export interface GeneratedFile {

@@ -4,6 +4,7 @@
   "columns": [
     "En",
     "Thai",
+    "Pronunciation",
     "title",
     "slug",
     "body_markdown",
@@ -12,7 +13,8 @@
   "rows": [
     {
       "En": "mouse",
-      "Thai": "",
+      "Thai": "หนู",
+      "Pronunciation": "nǔu",
       "title": "",
       "slug": "mouse",
       "body_markdown": "",
@@ -21,7 +23,8 @@
     },
     {
       "En": "cow",
-      "Thai": "",
+      "Thai": "วัว",
+      "Pronunciation": "wua",
       "title": "",
       "slug": "cow",
       "body_markdown": "",
@@ -30,7 +33,8 @@
     },
     {
       "En": "tiger",
-      "Thai": "",
+      "Thai": "เสือ",
+      "Pronunciation": "sǔea",
       "title": "",
       "slug": "tiger",
       "body_markdown": "",
@@ -39,7 +43,8 @@
     },
     {
       "En": "rabbit",
-      "Thai": "",
+      "Thai": "กระต่าย",
+      "Pronunciation": "grà-tàai",
       "title": "",
       "slug": "rabbit",
       "body_markdown": "",
@@ -48,7 +53,8 @@
     },
     {
       "En": "dragon",
-      "Thai": "",
+      "Thai": "มังกร",
+      "Pronunciation": "mang-gɔɔn",
       "title": "",
       "slug": "dragon",
       "body_markdown": "",
@@ -57,7 +63,8 @@
     },
     {
       "En": "snake",
-      "Thai": "",
+      "Thai": "งู",
+      "Pronunciation": "nguu",
       "title": "",
       "slug": "snake",
       "body_markdown": "",
@@ -66,7 +73,8 @@
     },
     {
       "En": "horse",
-      "Thai": "",
+      "Thai": "ม้า",
+      "Pronunciation": "máa",
       "title": "",
       "slug": "horse",
       "body_markdown": "",
@@ -75,7 +83,8 @@
     },
     {
       "En": "goat",
-      "Thai": "",
+      "Thai": "แพะ",
+      "Pronunciation": "phɛ́",
       "title": "",
       "slug": "goat",
       "body_markdown": "",
@@ -84,7 +93,8 @@
     },
     {
       "En": "pig",
-      "Thai": "",
+      "Thai": "หมู",
+      "Pronunciation": "mǔu",
       "title": "",
       "slug": "pig",
       "body_markdown": "",
@@ -93,7 +103,8 @@
     },
     {
       "En": "ant",
-      "Thai": "",
+      "Thai": "มด",
+      "Pronunciation": "mót",
       "title": "",
       "slug": "ant",
       "body_markdown": "",
@@ -102,7 +113,8 @@
     },
     {
       "En": "bee",
-      "Thai": "",
+      "Thai": "ผึ้ง",
+      "Pronunciation": "phʉ̂ng",
       "title": "",
       "slug": "bee",
       "body_markdown": "",
@@ -111,7 +123,8 @@
     },
     {
       "En": "snail",
-      "Thai": "",
+      "Thai": "หอยทาก",
+      "Pronunciation": "hɔ̌i-thâak",
       "title": "",
       "slug": "snail",
       "body_markdown": "",
@@ -120,7 +133,8 @@
     },
     {
       "En": "grasshopper",
-      "Thai": "",
+      "Thai": "ตั๊กแตน",
+      "Pronunciation": "dták-dtàen",
       "title": "",
       "slug": "grasshopper",
       "body_markdown": "",
@@ -129,7 +143,8 @@
     },
     {
       "En": "turtle",
-      "Thai": "",
+      "Thai": "เต่า",
+      "Pronunciation": "dtào",
       "title": "",
       "slug": "turtle",
       "body_markdown": "",
@@ -138,7 +153,8 @@
     },
     {
       "En": "crocodile",
-      "Thai": "",
+      "Thai": "จระเข้",
+      "Pronunciation": "jɔ́-rá-khê",
       "title": "",
       "slug": "crocodile",
       "body_markdown": "",
@@ -147,7 +163,8 @@
     },
     {
       "En": "duck",
-      "Thai": "",
+      "Thai": "เป็ด",
+      "Pronunciation": "bpèt",
       "title": "",
       "slug": "duck",
       "body_markdown": "",
@@ -156,7 +173,8 @@
     },
     {
       "En": "nok",
-      "Thai": "",
+      "Thai": "นก",
+      "Pronunciation": "nók",
       "title": "",
       "slug": "nok",
       "body_markdown": "",
@@ -165,7 +183,8 @@
     },
     {
       "En": "penguin",
-      "Thai": "",
+      "Thai": "เพนกวิน",
+      "Pronunciation": "pen-gwin",
       "title": "",
       "slug": "penguin",
       "body_markdown": "",
@@ -174,7 +193,8 @@
     },
     {
       "En": "chicken",
-      "Thai": "",
+      "Thai": "ไก่",
+      "Pronunciation": "gài",
       "title": "",
       "slug": "chicken",
       "body_markdown": "",
@@ -183,7 +203,8 @@
     },
     {
       "En": "elephant",
-      "Thai": "",
+      "Thai": "ช้าง",
+      "Pronunciation": "cháang",
       "title": "",
       "slug": "elephant",
       "body_markdown": "",
@@ -192,7 +213,8 @@
     },
     {
       "En": "sheep",
-      "Thai": "",
+      "Thai": "แกะ",
+      "Pronunciation": "gɛ̀",
       "title": "",
       "slug": "sheep",
       "body_markdown": "",
@@ -201,7 +223,8 @@
     },
     {
       "En": "buffalo",
-      "Thai": "",
+      "Thai": "ควาย",
+      "Pronunciation": "khwaai",
       "title": "",
       "slug": "buffalo",
       "body_markdown": "",
@@ -210,7 +233,8 @@
     },
     {
       "En": "donkey",
-      "Thai": "",
+      "Thai": "ลา",
+      "Pronunciation": "laa",
       "title": "",
       "slug": "donkey",
       "body_markdown": "",
@@ -219,7 +243,8 @@
     },
     {
       "En": "camel",
-      "Thai": "",
+      "Thai": "อูฐ",
+      "Pronunciation": "ùut",
       "title": "",
       "slug": "camel",
       "body_markdown": "",
@@ -228,7 +253,8 @@
     },
     {
       "En": "panda",
-      "Thai": "",
+      "Thai": "แพนด้า",
+      "Pronunciation": "phaen-dâa",
       "title": "",
       "slug": "panda",
       "body_markdown": "",
@@ -237,7 +263,8 @@
     },
     {
       "En": "sun bear",
-      "Thai": "",
+      "Thai": "หมีหมา",
+      "Pronunciation": "mǐi-mǎa",
       "title": "",
       "slug": "sun-bear",
       "body_markdown": "",
@@ -246,7 +273,8 @@
     },
     {
       "En": "koala",
-      "Thai": "",
+      "Thai": "โคอาลา",
+      "Pronunciation": "kho-aa-laa",
       "title": "",
       "slug": "koala",
       "body_markdown": "",
@@ -255,7 +283,8 @@
     },
     {
       "En": "gibbon",
-      "Thai": "",
+      "Thai": "ชะนี",
+      "Pronunciation": "chá-nii",
       "title": "",
       "slug": "gibbon",
       "body_markdown": "",
@@ -264,7 +293,8 @@
     },
     {
       "En": "squirrel",
-      "Thai": "",
+      "Thai": "กระรอก",
+      "Pronunciation": "grà-rɔ̂ɔk",
       "title": "",
       "slug": "squirrel",
       "body_markdown": "",
@@ -272,17 +302,9 @@
       "_slug": "squirrel"
     },
     {
-      "En": "",
-      "Thai": "",
-      "title": "",
-      "slug": "",
-      "body_markdown": "",
-      "publish_flag": "TRUE",
-      "_slug": ""
-    },
-    {
       "En": "cat",
-      "Thai": "",
+      "Thai": "แมว",
+      "Pronunciation": "mɛɛo",
       "title": "",
       "slug": "cat",
       "body_markdown": "",
@@ -291,7 +313,8 @@
     },
     {
       "En": "dog",
-      "Thai": "",
+      "Thai": "หมา",
+      "Pronunciation": "mǎa",
       "title": "",
       "slug": "dog",
       "body_markdown": "",
@@ -300,7 +323,8 @@
     },
     {
       "En": "hamster",
-      "Thai": "",
+      "Thai": "แฮมสเตอร์",
+      "Pronunciation": "haem-stə̂ə",
       "title": "",
       "slug": "hamster",
       "body_markdown": "",
@@ -309,7 +333,8 @@
     },
     {
       "En": "seahorse",
-      "Thai": "",
+      "Thai": "ม้าน้ำ",
+      "Pronunciation": "máa-náam",
       "title": "",
       "slug": "seahorse",
       "body_markdown": "",
@@ -318,7 +343,8 @@
     },
     {
       "En": "fish",
-      "Thai": "",
+      "Thai": "ปลา",
+      "Pronunciation": "bplaa",
       "title": "",
       "slug": "fish",
       "body_markdown": "",
@@ -327,7 +353,8 @@
     },
     {
       "En": "shrimp",
-      "Thai": "",
+      "Thai": "กุ้ง",
+      "Pronunciation": "gûng",
       "title": "",
       "slug": "shrimp",
       "body_markdown": "",

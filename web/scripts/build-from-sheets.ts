@@ -7,6 +7,7 @@
 //
 // Options:
 //   --fetch-assets          Download audio assets from audio_url column into public/assets/audio/
+//   --generate-audio        Generate TTS audio files for each row's body_markdown field
 //   --auth=service-account  Use service account auth (default)
 //   --auth=api-key          Use API key auth (GOOGLE_API_KEY env var)
 //   --sample=<path>         Use a local JSON file instead of fetching from Sheets
@@ -16,6 +17,10 @@
 //   GOOGLE_SERVICE_ACCOUNT_PATH     Path to service account JSON (default: ./credential.json)
 //   GOOGLE_SERVICE_ACCOUNT_JSON     Service account JSON as string (CI-friendly)
 //   WORKSHEET_NAME                  Comma-separated worksheet name(s) to fetch (optional)
+//   TTS_PROVIDER                    TTS provider: mock | local-gtts | http (default: mock)
+//   TTS_API_URL                     HTTP TTS API endpoint (required for TTS_PROVIDER=http)
+//   TTS_API_KEY                     HTTP TTS API key (required for TTS_PROVIDER=http)
+//   DEFAULT_TTS_VOICE               Default voice identifier (optional)
 
 import dotenv from 'dotenv';
 import path from 'path';
@@ -28,10 +33,13 @@ import fs from 'fs';
 import crypto from 'crypto';
 import { fetchWorksheet, listWorksheets } from './sheets-client';
 import type { BuildManifest, SheetData, WorksheetMeta, GeneratedFile } from '../types';
+import { generateAudioForPost } from '../src/lib/tts-service';
+import type { TtsOptions } from '../src/lib/tts-service';
 
 // Parse CLI args
 const args = process.argv.slice(2);
 const fetchAssets = args.includes('--fetch-assets');
+const generateAudio = args.includes('--generate-audio');
 const authMode = (args.find((a) => a.startsWith('--auth=')) ?? '--auth=service-account').replace(
   '--auth=',
   ''
@@ -133,28 +141,63 @@ async function loadSheetData(): Promise<SheetData[]> {
 
 /**
  * Process a single worksheet's data.
+ * When generateAudioFlag is true, generates TTS audio from the Thai column of each row.
  */
-function processWorksheet(
+async function processWorksheet(
   worksheetName: string,
   headers: string[],
   rows: Record<string, string>[],
-  manifest: BuildManifest
-): void {
+  manifest: BuildManifest,
+  generateAudioFlag: boolean
+): Promise<void> {
   const worksheetSlug = generateSlug(worksheetName);
   const generatedFiles: GeneratedFile[] = [];
 
+  // Only published rows get audio + post files
   const publishedRows = rows.filter(
     (row) => (row['publish_flag'] ?? '').trim().toUpperCase() === 'TRUE'
   );
 
+  // Generate audio for published rows (using Thai column) before building worksheet JSON
+  const audioMap = new Map<string, string>(); // slug → audio path
+  if (generateAudioFlag) {
+    const ttsOpts: TtsOptions = { lang: 'th', format: 'mp3' };
+    for (const row of publishedRows) {
+      const slug = row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? '');
+      const thaiText = (row['Thai'] ?? '').trim();
+      if (!thaiText) {
+        console.warn(`[build]   ⚠ No Thai text for row "${slug}" — skipping audio`);
+        continue;
+      }
+      try {
+        const audio = await generateAudioForPost(thaiText, slug, ttsOpts);
+        audioMap.set(slug, audio.path);
+        console.log(`[build]   🔊 audio: ${slug} → ${audio.path} (hash: ${audio.hash.slice(0, 8)}…)`);
+      } catch (err) {
+        const msg = (err as Error).message;
+        throw new Error(`[build] Audio generation failed for "${slug}": ${msg}`);
+      }
+    }
+  }
+
+  // Worksheet JSON stores ALL rows (including drafts), with audio path injected for published rows
+  const allProcessedRows = rows.map((row) => {
+    const slug = row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? '');
+    const base = { ...row, _slug: slug };
+    const audioPath = audioMap.get(slug);
+    return audioPath ? { ...base, audio: audioPath } : base;
+  });
+
+  const columnsWithAudio =
+    generateAudioFlag && audioMap.size > 0 && !headers.includes('audio')
+      ? [...headers, 'audio']
+      : headers;
+
   const worksheetData = {
     worksheetName,
     worksheetSlug,
-    columns: headers,
-    rows: publishedRows.map((row) => ({
-      ...row,
-      _slug: row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? ''),
-    })),
+    columns: columnsWithAudio,
+    rows: allProcessedRows,
   };
 
   const worksheetFile = path.join(WORKSHEETS_DIR, `${worksheetSlug}.json`);
@@ -162,8 +205,37 @@ function processWorksheet(
 
   const wsHash = contentHash(worksheetData);
   generatedFiles.push({ path: `public/data/worksheets/${worksheetSlug}.json`, hash: wsHash });
+
+  // Write individual post files for published rows
+  for (const row of publishedRows) {
+    const slug = row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? '');
+    const tags = (row['tags'] ?? '')
+      .split(',')
+      .map((t) => t.trim())
+      .filter(Boolean);
+
+    const postData: Record<string, unknown> = {
+      slug,
+      title: row['title'] ?? '',
+      worksheetName,
+      worksheetSlug,
+      body_markdown: row['body_markdown'] ?? '',
+      date: row['date'] ?? '',
+      author: row['author'] ?? '',
+      tags,
+      audio_url: row['audio_url'] ?? '',
+    };
+
+    const audioPath = audioMap.get(slug);
+    if (audioPath) postData.audio = audioPath;
+
+    const postFile = path.join(POSTS_DIR, `${slug}.json`);
+    writeJson(postFile, postData);
+    generatedFiles.push({ path: `public/content/posts/${slug}.json`, hash: contentHash(postData) });
+  }
+
   console.log(
-    `[build]   ✓ worksheet: ${worksheetSlug} (${publishedRows.length}/${rows.length} rows published)`
+    `[build]   ✓ worksheet: ${worksheetSlug} (${publishedRows.length}/${rows.length} rows published${generateAudioFlag ? `, ${audioMap.size} audio files` : ''})`
   );
 
   const wsMeta: WorksheetMeta = { worksheetName, worksheetSlug, rowCount: publishedRows.length };
@@ -226,7 +298,11 @@ async function main(): Promise<void> {
     console.log(
       `[build] Processing worksheet: "${worksheetName}" (${rows.length} rows, ${headers.length} columns)`
     );
-    processWorksheet(worksheetName, headers, rows, manifest);
+    await processWorksheet(worksheetName, headers, rows, manifest, generateAudio);
+  }
+
+  if (generateAudio) {
+    console.log(`[build] Audio generation complete (TTS_PROVIDER=${process.env.TTS_PROVIDER || 'mock'})`);
   }
 
   if (fetchAssets) {
