@@ -50,7 +50,6 @@ const samplePath = sampleArg ? sampleArg.replace('--sample=', '') : null;
 // Paths
 const ROOT_DIR = path.resolve(__dirname, '..');
 const PUBLIC_DIR = path.join(ROOT_DIR, 'public');
-const POSTS_DIR = path.join(PUBLIC_DIR, 'content', 'posts');
 const WORKSHEETS_DIR = path.join(PUBLIC_DIR, 'data', 'worksheets');
 const MANIFEST_DIR = path.join(PUBLIC_DIR, 'data');
 const ASSETS_DIR = path.join(PUBLIC_DIR, 'assets', 'audio');
@@ -180,7 +179,7 @@ async function processWorksheet(
     }
   }
 
-  // Worksheet JSON stores ALL rows (including drafts), with audio path injected for published rows
+  // Write worksheet JSON for ALL rows (including drafts)
   const allProcessedRows = rows.map((row) => {
     const slug = row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? '');
     const base = { ...row, _slug: slug };
@@ -205,34 +204,6 @@ async function processWorksheet(
 
   const wsHash = contentHash(worksheetData);
   generatedFiles.push({ path: `public/data/worksheets/${worksheetSlug}.json`, hash: wsHash });
-
-  // Write individual post files for published rows
-  for (const row of publishedRows) {
-    const slug = row['slug'] ? row['slug'].trim() : generateSlug(row['title'] ?? '');
-    const tags = (row['tags'] ?? '')
-      .split(',')
-      .map((t) => t.trim())
-      .filter(Boolean);
-
-    const postData: Record<string, unknown> = {
-      slug,
-      title: row['title'] ?? '',
-      worksheetName,
-      worksheetSlug,
-      body_markdown: row['body_markdown'] ?? '',
-      date: row['date'] ?? '',
-      author: row['author'] ?? '',
-      tags,
-      audio_url: row['audio_url'] ?? '',
-    };
-
-    const audioPath = audioMap.get(slug);
-    if (audioPath) postData.audio = audioPath;
-
-    const postFile = path.join(POSTS_DIR, `${slug}.json`);
-    writeJson(postFile, postData);
-    generatedFiles.push({ path: `public/content/posts/${slug}.json`, hash: contentHash(postData) });
-  }
 
   console.log(
     `[build]   ✓ worksheet: ${worksheetSlug} (${publishedRows.length}/${rows.length} rows published${generateAudioFlag ? `, ${audioMap.size} audio files` : ''})`
@@ -278,7 +249,7 @@ async function main(): Promise<void> {
   console.log('[build] Starting build-from-sheets...');
   console.log(`[build] Auth mode: ${authMode}`);
 
-  [POSTS_DIR, WORKSHEETS_DIR, MANIFEST_DIR, ASSETS_DIR].forEach((d) =>
+  [WORKSHEETS_DIR, MANIFEST_DIR, ASSETS_DIR].forEach((d) =>
     fs.mkdirSync(d, { recursive: true })
   );
 

@@ -5,7 +5,6 @@
   "scripts": {
     "build:sheets": "tsx scripts/build-from-sheets.ts",
     "build:sheets:with-audio": "tsx scripts/build-from-sheets.ts --generate-audio",
-    "add-columns": "tsx scripts/add-post-columns.ts",
     "build": "npm run build:sheets && next build",
     "build:with-audio": "npm run build:sheets:with-audio && next build",
     "dev": "next dev",
