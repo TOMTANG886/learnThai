@@ -1,15 +1,7 @@
 {
   "worksheetName": "place",
   "worksheetSlug": "place",
-  "columns": [
-    "English",
-    "Thai",
-    "Pronunciation",
-    "title",
-    "slug",
-    "body_markdown",
-    "publish_flag"
-  ],
+  "columns": ["English", "Thai", "Pronunciation", "title", "slug", "body_markdown", "publish_flag"],
   "rows": [
     {
       "English": "police station",

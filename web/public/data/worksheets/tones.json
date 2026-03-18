@@ -1,14 +1,7 @@
 {
   "worksheetName": "tones",
   "worksheetSlug": "tones",
-  "columns": [
-    "En",
-    "Thai",
-    "title",
-    "slug",
-    "body_markdown",
-    "publish_flag"
-  ],
+  "columns": ["En", "Thai", "title", "slug", "body_markdown", "publish_flag"],
   "rows": [
     {
       "En": "mid-tone",

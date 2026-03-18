@@ -2,15 +2,15 @@
 // Reusable HTML5 audio player component for Thai blog post pages.
 // Principle III: isolated component with clear props interface, no runtime API dependencies.
 
-import { useState } from 'react';
+import { useState } from 'react'
 
 export interface AudioPlayerProps {
   /** URL path to audio file (e.g. "/assets/audio/abc123.mp3") */
-  audioPath: string;
+  audioPath: string
   /** Post title used for ARIA label (optional) */
-  title?: string;
+  title?: string
   /** CSS class name for custom styling (optional) */
-  className?: string;
+  className?: string
 }
 
 /**
@@ -22,16 +22,16 @@ export interface AudioPlayerProps {
  * - No external dependencies — browser-native controls only.
  */
 export function AudioPlayer({ audioPath, title, className }: AudioPlayerProps): JSX.Element {
-  const [error, setError] = useState(false);
+  const [error, setError] = useState(false)
 
-  const ariaLabel = title ? `Audio for ${title}` : 'Audio player';
+  const ariaLabel = title ? `Audio for ${title}` : 'Audio player'
 
   if (error) {
     return (
       <p className="audio-error" role="alert">
         Audio unavailable for this post.
       </p>
-    );
+    )
   }
 
   return (
@@ -45,7 +45,7 @@ export function AudioPlayer({ audioPath, title, className }: AudioPlayerProps): 
       <source src={audioPath} type="audio/mpeg" />
       Your browser does not support audio playback.
     </audio>
-  );
+  )
 }
 
-export default AudioPlayer;
+export default AudioPlayer

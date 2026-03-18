@@ -74,11 +74,13 @@ The TTS audio generation service creates audio files from Thai text during the b
 **Use Case**: Local development without TTS API credentials
 
 **Configuration**:
+
 ```bash
 TTS_PROVIDER=mock
 ```
 
 **Behavior**:
+
 - Creates placeholder `.mp3` files (small text files)
 - No external API calls
 - Instant generation
@@ -86,6 +88,7 @@ TTS_PROVIDER=mock
 - Enables full workflow testing without credentials
 
 **When to Use**:
+
 - Local development and testing
 - CI/CD pipelines without API access
 - Prototyping and UI development
@@ -95,6 +98,7 @@ TTS_PROVIDER=mock
 **Use Case**: Real Thai speech synthesis via external TTS API
 
 **Configuration**:
+
 ```bash
 TTS_PROVIDER=http
 TTS_API_URL=https://texttospeech.googleapis.com/v1/text:synthesize
@@ -103,12 +107,14 @@ DEFAULT_TTS_VOICE=th-TH-Standard-A
 ```
 
 **Supported APIs**:
+
 - Google Cloud Text-to-Speech
 - AWS Polly
 - Azure Speech Services
 - Any REST API returning audio binary data
 
 **Behavior**:
+
 - Sends POST request with text, voice, and language parameters
 - Receives binary audio data (MP3 format)
 - Writes to `public/assets/audio/{hash}.mp3`
@@ -116,6 +122,7 @@ DEFAULT_TTS_VOICE=th-TH-Standard-A
 - Fails fast with actionable errors if misconfigured
 
 **Requirements**:
+
 - Valid `TTS_API_URL` environment variable
 - Valid `TTS_API_KEY` environment variable
 - API must accept JSON payload: `{ text, voice, lang, format }`
@@ -126,11 +133,13 @@ DEFAULT_TTS_VOICE=th-TH-Standard-A
 **Behavior**: If HTTP provider is selected but not fully configured, the system automatically falls back to Local Provider mode.
 
 **Triggers Fallback**:
+
 - `TTS_PROVIDER` is not set
 - `TTS_PROVIDER` is set to something other than `http`
 - `TTS_PROVIDER=http` but `TTS_API_URL` or `TTS_API_KEY` is missing
 
 **Example**:
+
 ```bash
 # This will use mock provider automatically
 npm run build:sheets -- --generate-audio
@@ -139,12 +148,12 @@ npm run build:sheets -- --generate-audio
 
 ### Environment Variables
 
-| Variable | Required | Default | Description |
-|----------|----------|---------|-------------|
-| `TTS_PROVIDER` | No | `mock` | Provider mode: `mock` or `http` |
-| `TTS_API_URL` | Yes (if http) | - | TTS API endpoint URL |
-| `TTS_API_KEY` | Yes (if http) | - | API authentication key |
-| `DEFAULT_TTS_VOICE` | No | `th-TH-Standard-A` | Default voice identifier |
+| Variable            | Required      | Default            | Description                     |
+| ------------------- | ------------- | ------------------ | ------------------------------- |
+| `TTS_PROVIDER`      | No            | `mock`             | Provider mode: `mock` or `http` |
+| `TTS_API_URL`       | Yes (if http) | -                  | TTS API endpoint URL            |
+| `TTS_API_KEY`       | Yes (if http) | -                  | API authentication key          |
+| `DEFAULT_TTS_VOICE` | No            | `th-TH-Standard-A` | Default voice identifier        |
 
 ### Usage Examples
 
@@ -190,6 +199,7 @@ Audio files are cached by **content hash** (SHA-256):
 3. **Content Change**: New hash generated, new API call made, new file created
 
 **Cache Hit Example**:
+
 ```bash
 # First run
 npm run build:sheets -- --generate-audio
@@ -201,6 +211,7 @@ npm run build:sheets -- --generate-audio
 ```
 
 **Benefits**:
+
 - Reduces build time (50%+ faster on cache hits)
 - Saves API quota/costs
 - Deterministic builds (same input → same output)
@@ -231,34 +242,30 @@ The `AudioPlayer` component renders an HTML5 audio player for blog post pages.
 **Usage**:
 
 ```tsx
-import { AudioPlayer } from '@/components/AudioPlayer';
+import { AudioPlayer } from '@/components/AudioPlayer'
 
 export default function PostPage({ title, audio }) {
   return (
     <article>
       <h1>{title}</h1>
-      
+
       {/* Render audio player if audio path exists */}
-      {audio && (
-        <AudioPlayer 
-          audioPath={audio} 
-          title={title} 
-          className="my-custom-class"
-        />
-      )}
-      
+      {audio && <AudioPlayer audioPath={audio} title={title} className="my-custom-class" />}
+
       {/* Rest of content */}
     </article>
-  );
+  )
 }
 ```
 
 **Props**:
+
 - `audioPath` (required): URL path to audio file (e.g., `/assets/audio/abc123...mp3`)
 - `title` (optional): Post title for aria-label accessibility
 - `className` (optional): CSS class for custom styling
 
 **Features**:
+
 - HTML5 native controls (play, pause, progress bar, volume)
 - Graceful error handling (displays error message if audio fails to load)
 - Accessibility support (ARIA labels, keyboard navigation)
@@ -295,7 +302,7 @@ Add custom styles in your CSS:
 Import the styles:
 
 ```tsx
-import '@/styles/audio-player.css';
+import '@/styles/audio-player.css'
 ```
 
 ---
@@ -307,12 +314,14 @@ import '@/styles/audio-player.css';
 #### Missing HTTP Configuration
 
 **Error**:
+
 ```
 ERROR: TTS_PROVIDER is set to 'http' but TTS_API_URL is not configured.
 Please set TTS_API_URL in your environment or use TTS_PROVIDER=mock for local development.
 ```
 
 **Solution**:
+
 ```bash
 # Option 1: Use mock provider
 echo "TTS_PROVIDER=mock" >> .env.local
@@ -325,17 +334,20 @@ echo "TTS_API_KEY=your-key" >> .env.local
 #### API Request Failed
 
 **Error**:
+
 ```
 TTS API request failed: 401 Unauthorized
 ```
 
 **Common Causes**:
+
 - Invalid API key
 - API key expired
 - Incorrect API URL
 - API rate limit exceeded
 
 **Solution**:
+
 1. Verify API key is correct
 2. Check API provider dashboard for status
 3. Test with `curl` directly:
@@ -349,11 +361,13 @@ TTS API request failed: 401 Unauthorized
 #### Network Timeout
 
 **Error**:
+
 ```
 TTS API request failed: Network timeout
 ```
 
 **Solution**:
+
 - Check internet connection
 - Verify API endpoint is accessible
 - Try again (temporary network issue)
@@ -365,11 +379,13 @@ TTS API request failed: Network timeout
 **Symptom**: Player shows "Audio unavailable for this post"
 
 **Causes**:
+
 - Audio file was deleted from `public/assets/audio/`
 - Build ran without `--generate-audio` flag
 - Incorrect audio path in manifest
 
 **Solution**:
+
 ```bash
 # Regenerate missing audio files
 npm run build:sheets -- --generate-audio
@@ -421,11 +437,13 @@ npm test -- --coverage
 ### Reduce Build Time
 
 1. **Use Mock Provider for Local Dev**:
+
    ```bash
    TTS_PROVIDER=mock npm run build:sheets -- --generate-audio
    ```
 
 2. **Commit Audio Files** (if desired):
+
    ```bash
    git add -f web/public/assets/audio/*.mp3
    git commit -m "Cache audio files for faster builds"
@@ -439,6 +457,7 @@ npm test -- --coverage
 ### Audio File Size
 
 Current implementation:
+
 - **Format**: MP3
 - **Typical Size**: 50-500 KB per post (depends on text length)
 - **Caching**: Browser caches audio files (reduces repeat visitor bandwidth)
@@ -450,6 +469,7 @@ Current implementation:
 ### Audio Player Not Rendering
 
 **Checklist**:
+
 1. ✅ Verify `audio` field exists in post data
 2. ✅ Check conditional rendering: `{audio && <AudioPlayer ... />}`
 3. ✅ Verify component import path is correct
@@ -474,7 +494,7 @@ Current implementation:
 Or use relative import:
 
 ```tsx
-import { AudioPlayer } from '../components/AudioPlayer';
+import { AudioPlayer } from '../components/AudioPlayer'
 ```
 
 ### Slow Build with HTTP Provider
@@ -482,11 +502,13 @@ import { AudioPlayer } from '../components/AudioPlayer';
 **Symptom**: Build takes 5+ minutes
 
 **Causes**:
+
 - Generating audio for many posts
 - No cached files (first run)
 - Slow TTS API response
 
 **Solutions**:
+
 1. Use mock provider for local dev
 2. Commit generated audio files to git
 3. Run builds incrementally (only generate when content changes)
@@ -498,11 +520,13 @@ import { AudioPlayer } from '../components/AudioPlayer';
 ### API Key Protection
 
 **✅ DO**:
+
 - Store API keys in `.env.local` (gitignored)
 - Use environment variables in production deployments
 - Rotate keys regularly
 
 **❌ DON'T**:
+
 - Commit `.env.local` to git
 - Hardcode API keys in source code
 - Include keys in error messages or logs
@@ -510,11 +534,13 @@ import { AudioPlayer } from '../components/AudioPlayer';
 ### Credential Logging
 
 The TTS service **never logs or exposes**:
+
 - API keys
 - Authorization headers
 - Full API URLs with credentials
 
 Error messages include:
+
 - ✅ HTTP status codes
 - ✅ Error types (network, auth, etc.)
 - ✅ Actionable troubleshooting steps
@@ -528,11 +554,13 @@ Error messages include:
 **Location**: `src/lib/tts-service.ts`
 
 **Exports**:
+
 - `generateAudioForPost(text, slug, opts)`: Main audio generation function
 - `hashTextForAudio(text, opts)`: Content hash generation
 - `TtsOptions`: TypeScript interface for configuration
 
 **Design Principles**:
+
 - **Isolated**: No dependencies on build scripts or page components
 - **Idempotent**: Same input always produces same output
 - **Cacheable**: Hash-based filenames enable deterministic caching
@@ -543,6 +571,7 @@ Error messages include:
 **Location**: `scripts/build-from-sheets.ts`
 
 **Flow**:
+
 1. Fetch content from Google Sheets
 2. For each post:
    - Translate content (existing)
@@ -584,6 +613,7 @@ To add features to the audio player (e.g., speed control, download button):
 ## Support
 
 For issues or questions:
+
 - Check [Troubleshooting](#troubleshooting) section
 - Review [specs/002-tts-audio/](../specs/002-tts-audio/) documentation
 - Check test files for usage examples

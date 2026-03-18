@@ -1,15 +1,7 @@
 {
   "worksheetName": "clothes",
   "worksheetSlug": "clothes",
-  "columns": [
-    "En",
-    "Thai",
-    "Pronunciation",
-    "title",
-    "slug",
-    "body_markdown",
-    "publish_flag"
-  ],
+  "columns": ["En", "Thai", "Pronunciation", "title", "slug", "body_markdown", "publish_flag"],
   "rows": [
     {
       "En": "hat",

@@ -1,4 +1,4 @@
-import { withSentryConfig } from '@sentry/nextjs';
+import { withSentryConfig } from '@sentry/nextjs'
 
 const nextConfig = {
   output: 'export',
@@ -6,7 +6,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-};
+}
 
 export default withSentryConfig(nextConfig, {
   // Suppresses source map upload logs during build
@@ -15,4 +15,4 @@ export default withSentryConfig(nextConfig, {
     // Disable server/edge Sentry (static export only)
     autoInstrumentServerFunctions: false,
   },
-});
+})

@@ -1,15 +1,7 @@
 {
   "worksheetName": "day",
   "worksheetSlug": "day",
-  "columns": [
-    "English",
-    "Thai",
-    "Pronunciation",
-    "title",
-    "slug",
-    "body_markdown",
-    "publish_flag"
-  ],
+  "columns": ["English", "Thai", "Pronunciation", "title", "slug", "body_markdown", "publish_flag"],
   "rows": [
     {
       "English": "What day?",
