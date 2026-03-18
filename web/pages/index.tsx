@@ -1,22 +1,25 @@
-import fs from 'fs';
-import path from 'path';
-import Head from 'next/head';
-import type { GetStaticProps } from 'next';
-import type { WorksheetMeta } from '../types';
-import Link from 'next/link';
+import fs from 'fs'
+import path from 'path'
+import Head from 'next/head'
+import type { GetStaticProps } from 'next'
+import type { WorksheetMeta } from '../types'
+import Link from 'next/link'
 
 interface HomePageProps {
-  worksheets: WorksheetMeta[];
+  worksheets: WorksheetMeta[]
 }
 
 export default function HomePage({ worksheets }: HomePageProps) {
+  console.log('User triggered test log')
   return (
     <>
       <Head>
         <title>Learn Thai</title>
         <meta name="description" content="Learn Thai vocabulary and phrases by topic" />
       </Head>
-      <main style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem', fontFamily: 'sans-serif' }}>
+      <main
+        style={{ maxWidth: '900px', margin: '0 auto', padding: '2rem', fontFamily: 'sans-serif' }}
+      >
         <header style={{ textAlign: 'center', marginBottom: '3rem' }}>
           <h1 style={{ fontSize: '2.5rem', marginBottom: '0.5rem' }}>🇹🇭 Learn Thai</h1>
           <p style={{ color: '#666', fontSize: '1.1rem' }}>
@@ -46,12 +49,12 @@ export default function HomePage({ worksheets }: HomePageProps) {
                 color: 'inherit',
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.10)';
-                e.currentTarget.style.borderColor = '#0070f3';
+                e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.10)'
+                e.currentTarget.style.borderColor = '#0070f3'
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.boxShadow = 'none';
-                e.currentTarget.style.borderColor = '#e0e0e0';
+                e.currentTarget.style.boxShadow = 'none'
+                e.currentTarget.style.borderColor = '#e0e0e0'
               }}
             >
               <div style={{ fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.3rem' }}>
@@ -65,18 +68,18 @@ export default function HomePage({ worksheets }: HomePageProps) {
         </div>
       </main>
     </>
-  );
+  )
 }
 
 export const getStaticProps: GetStaticProps<HomePageProps> = async () => {
-  const manifestPath = path.join(process.cwd(), 'public', 'data', 'manifest.json');
+  const manifestPath = path.join(process.cwd(), 'public', 'data', 'manifest.json')
 
   if (!fs.existsSync(manifestPath)) {
-    return { props: { worksheets: [] } };
+    return { props: { worksheets: [] } }
   }
 
-  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
-  const worksheets = (manifest.worksheets || []).filter((w: WorksheetMeta) => w.rowCount > 0);
+  const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'))
+  const worksheets = (manifest.worksheets || []).filter((w: WorksheetMeta) => w.rowCount > 0)
 
-  return { props: { worksheets } };
-};
+  return { props: { worksheets } }
+}

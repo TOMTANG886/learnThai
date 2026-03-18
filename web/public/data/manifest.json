@@ -1,6 +1,6 @@
 {
-  "run_id": "a80d8992-72e5-465a-99da-9b6370739a98",
-  "timestamp": "2026-03-08T12:20:45.629Z",
+  "run_id": "6b19e208-b533-43a3-9220-174203173aa6",
+  "timestamp": "2026-03-18T14:20:32.086Z",
   "source": "sheets:1WPFglLUgFfAgQuDgk4uGNJ4JrCiyAEeHqVSLWr11FCI",
   "worksheets": [
     {
@@ -51,7 +51,7 @@
     {
       "worksheetName": "day",
       "worksheetSlug": "day",
-      "rowCount": 23
+      "rowCount": 17
     },
     {
       "worksheetName": "date",
@@ -123,7 +123,7 @@
     },
     {
       "path": "public/data/worksheets/day.json",
-      "hash": "e727d5f946b7656b"
+      "hash": "e01b0b16c5931aeb"
     },
     {
       "path": "public/data/worksheets/date.json",
