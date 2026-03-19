@@ -10,7 +10,6 @@ interface HomePageProps {
 }
 
 export default function HomePage({ worksheets }: HomePageProps) {
-  console.log('User triggered test log')
   return (
     <>
       <Head>
