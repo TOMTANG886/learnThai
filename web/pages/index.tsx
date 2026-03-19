@@ -4,7 +4,6 @@ import Head from 'next/head'
 import type { GetStaticProps } from 'next'
 import type { WorksheetMeta } from '../types'
 import Link from 'next/link'
-
 interface HomePageProps {
   worksheets: WorksheetMeta[]
 }

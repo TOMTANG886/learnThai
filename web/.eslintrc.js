@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['next/core-web-vitals', 'eslint-config-prettier'],
+  plugins: ['@typescript-eslint'],
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
