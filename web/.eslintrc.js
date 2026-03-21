@@ -1,12 +1,9 @@
 module.exports = {
-  extends: ['next/core-web-vitals', 'eslint-config-prettier'],
-  plugins: ['@typescript-eslint'],
+  ignorePatterns: ['node_modules/', '.next/', 'out/', 'dist/', 'coverage/'],
+  extends: ['next/core-web-vitals', 'eslint-config-prettier', 'plugin:@typescript-eslint/recommended'],
   rules: {
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'error',
-      { argsIgnorePattern: '^_', varsIgnorePattern: '^_' },
-    ],
+    'no-console': 'warn',
+    eqeqeq: ['error', 'always'],
   },
   overrides: [
     {
