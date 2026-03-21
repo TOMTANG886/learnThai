@@ -8,6 +8,7 @@ out/
 web/.next/
 web/out/
 web/dist/
+web/public/data/
 
 # Test outputs
 coverage/
