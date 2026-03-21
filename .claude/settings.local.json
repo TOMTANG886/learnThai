@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Read(//c/Users/user/Desktop/thaiwithpan/learnThai/web/**)",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "Bash(npx vitest:*)",
+      "Bash(npm test:*)"
     ]
   }
 }
